@@ -494,6 +494,35 @@
             </objects>
             <point key="canvasLocation" x="2508.6956521739135" y="133.69565217391306"/>
         </scene>
+        <!--Journal History-->
+        <scene sceneID="m7w-cX-ENx">
+            <objects>
+                <tableViewController id="zZs-gv-dq5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4J-I0-l28">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UGP-hv-tSK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UGP-hv-tSK" id="bwb-ES-Ut8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zZs-gv-dq5" id="SuR-Ex-0he"/>
+                            <outlet property="delegate" destination="zZs-gv-dq5" id="hLe-Vg-kbq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Journal History" id="W5z-NB-HJK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwQ-KK-FOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4830" y="-554"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="yg7-y3-rph">
             <objects>
@@ -620,21 +649,11 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VL2-dJ-Q6f" kind="relationship" relationship="rootViewController" id="Vp4-22-qrG"/>
+                        <segue destination="zZs-gv-dq5" kind="relationship" relationship="rootViewController" id="Vp4-22-qrG"/>
                     </connections>
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="4136" y="-554"/>
-        </scene>
-        <!--JournalHistory-->
-        <scene sceneID="d05-1k-NSD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="JournalHistory" id="VL2-dJ-Q6f" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Vnr-WZ-C8v"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gV4-Yf-KN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4830" y="-554"/>
         </scene>
     </scenes>
 </document>
