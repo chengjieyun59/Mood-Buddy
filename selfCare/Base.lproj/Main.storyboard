@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jcb-La-LU5">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View-->
+        <scene sceneID="AFF-hP-AMr">
+            <objects>
+                <tabBarController id="Jcb-La-LU5" customClass="InitialView" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="76o-pg-oSF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hgb-24-sNE"/>
+                        <segue destination="YWR-DD-p0H" kind="relationship" relationship="viewControllers" id="ZxH-fg-fGn"/>
+                        <segue destination="w82-aQ-ck2" kind="relationship" relationship="viewControllers" id="qHV-ii-qhr"/>
+                        <segue destination="9Rg-T3-iNL" kind="relationship" relationship="viewControllers" id="eiv-t8-J0N"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p63-vB-1Yy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1602" y="229"/>
+        </scene>
+        <!--Self Care-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,6 +78,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Music"/>
+                                <connections>
+                                    <segue destination="RYP-n2-TSt" kind="show" id="WHP-R0-gJC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-vF-yFS">
                                 <rect key="frame" x="55" y="286" width="100" height="40"/>
@@ -68,6 +92,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Exercise"/>
+                                <connections>
+                                    <segue destination="YAT-j7-ABh" kind="show" id="i9R-Ru-N4g"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10 is great)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tw-cQ-0gp">
                                 <rect key="frame" x="55" y="105" width="91" height="21"/>
@@ -106,9 +133,12 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Journal"/>
+                                <connections>
+                                    <segue destination="VFr-4p-db5" kind="show" id="6LU-iQ-f2Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-de-hyZ">
-                                <rect key="frame" x="184" y="676" width="210" height="40"/>
+                                <rect key="frame" x="184" y="627" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Qvm-cp-AER"/>
@@ -146,10 +176,11 @@
                             <constraint firstItem="QRi-vF-yFS" firstAttribute="top" secondItem="uMT-Ok-k4n" secondAttribute="bottom" constant="10" id="yT1-yR-8hJ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Self Care" id="urC-rE-9iB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114.49275362318842" y="133.69565217391306"/>
+            <point key="canvasLocation" x="-794" y="228"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="viN-NV-wvg">
@@ -194,6 +225,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
+                                <connections>
+                                    <segue destination="X16-N1-alC" kind="show" identifier="DoneForTheDay" id="xec-1w-WlW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -211,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5X-gN-z3N" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.62318840579712" y="825.81521739130437"/>
+            <point key="canvasLocation" x="854" y="976"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LEM-9w-P9g">
@@ -256,6 +290,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
+                                <connections>
+                                    <segue destination="X16-N1-alC" kind="show" identifier="DoneForTheDay" id="6qR-qT-vku"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -275,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YT-0q-r9J" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="136"/>
+            <point key="canvasLocation" x="854" y="227"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mRN-7c-0dI">
@@ -312,6 +349,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
+                                <connections>
+                                    <segue destination="X16-N1-alC" kind="show" identifier="DoneForTheDay" id="Zzg-Bz-41F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -353,9 +393,23 @@
                                     <navigationItem title="Congratulations!" id="9Jz-Cz-Uhb"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations of your day 20 of self-care. You're on a 8-day streak." textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZn-cn-ZV8">
-                                <rect key="frame" x="20" y="74" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL5-lP-r5B">
+                                <rect key="frame" x="184" y="627" width="210" height="40"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h0Y-wE-Jns"/>
+                                    <constraint firstAttribute="width" constant="210" id="x0A-YG-40G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Yay!"/>
+                                <connections>
+                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="Yay" id="fVK-il-Tif"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations on your  day 20 of self-care.  You're on a 8-day streak." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0w-3o-9Sv">
+                                <rect key="frame" x="20" y="74" width="374" height="93.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -363,17 +417,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Lz8-h2-6dX" firstAttribute="leading" secondItem="QLg-3e-P6p" secondAttribute="leading" id="5Hu-z7-zYz"/>
+                            <constraint firstAttribute="trailing" secondItem="RL5-lP-r5B" secondAttribute="trailing" constant="20" id="AcO-Ge-qDY"/>
+                            <constraint firstAttribute="trailing" secondItem="g0w-3o-9Sv" secondAttribute="trailing" constant="20" id="GPa-06-Yal"/>
                             <constraint firstItem="Lz8-h2-6dX" firstAttribute="top" secondItem="Xdj-y8-1xW" secondAttribute="bottom" id="Hcy-Ue-Fco"/>
+                            <constraint firstItem="g0w-3o-9Sv" firstAttribute="leading" secondItem="QLg-3e-P6p" secondAttribute="leading" constant="20" id="Hv9-d1-dmF"/>
                             <constraint firstAttribute="trailing" secondItem="Lz8-h2-6dX" secondAttribute="trailing" id="XMb-2w-57A"/>
-                            <constraint firstAttribute="trailing" secondItem="qZn-cn-ZV8" secondAttribute="trailing" constant="20" id="cdF-Zx-Z58"/>
-                            <constraint firstItem="qZn-cn-ZV8" firstAttribute="top" secondItem="Lz8-h2-6dX" secondAttribute="bottom" constant="10" id="d62-xH-agZ"/>
-                            <constraint firstItem="qZn-cn-ZV8" firstAttribute="leading" secondItem="QLg-3e-P6p" secondAttribute="leading" constant="20" id="haM-by-f37"/>
+                            <constraint firstItem="A8L-sC-MXj" firstAttribute="top" secondItem="RL5-lP-r5B" secondAttribute="bottom" constant="20" id="hFC-q7-pss"/>
+                            <constraint firstItem="g0w-3o-9Sv" firstAttribute="top" secondItem="Lz8-h2-6dX" secondAttribute="bottom" constant="10" id="zD5-0D-WEi"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQJ-tT-Uwz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700.0000000000002" y="133.69565217391306"/>
+            <point key="canvasLocation" x="1842" y="228"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vtb-Bd-l9k">
@@ -492,9 +548,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8c-Am-aUU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2508.6956521739135" y="133.69565217391306"/>
+            <point key="canvasLocation" x="2719" y="228"/>
         </scene>
-        <!--View Controller-->
+        <!--Journal History-->
         <scene sceneID="yg7-y3-rph">
             <objects>
                 <viewController id="w82-aQ-ck2" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
@@ -527,12 +583,13 @@
                             <constraint firstItem="DnE-ns-6ta" firstAttribute="leading" secondItem="kLD-X8-MFS" secondAttribute="leading" id="lPm-3S-xpW"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Journal History" id="Boj-cW-aOL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUL-DP-dCm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3362" y="-554"/>
+            <point key="canvasLocation" x="-1494" y="1015"/>
         </scene>
-        <!--View Controller-->
+        <!--Personal History-->
         <scene sceneID="WNc-XB-UuL">
             <objects>
                 <viewController id="YWR-DD-p0H" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
@@ -565,12 +622,13 @@
                             <constraint firstItem="NkD-vC-Jgy" firstAttribute="top" secondItem="dEZ-kZ-nKh" secondAttribute="bottom" id="dQ4-mx-eht"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Personal History" id="bGK-p4-Tdb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3t-Xl-VeZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3361" y="135"/>
+            <point key="canvasLocation" x="-794" y="1015"/>
         </scene>
-        <!--View Controller-->
+        <!--Resources-->
         <scene sceneID="ZtW-Ri-p0J">
             <objects>
                 <viewController id="9Rg-T3-iNL" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
@@ -603,38 +661,14 @@
                             <constraint firstItem="8wF-ld-WON" firstAttribute="top" secondItem="8YK-CX-blL" secondAttribute="bottom" id="cep-VY-hce"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Resources" id="dN7-d3-Qoo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqy-7J-kYZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3361" y="825"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="976-Gt-WZl">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j1w-BK-C5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kms-Gl-R4v" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xXO-E9-7bQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="VL2-dJ-Q6f" kind="relationship" relationship="rootViewController" id="Vp4-22-qrG"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="4136" y="-554"/>
-        </scene>
-        <!--JournalHistory-->
-        <scene sceneID="d05-1k-NSD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="JournalHistory" id="VL2-dJ-Q6f" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Vnr-WZ-C8v"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gV4-Yf-KN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4830" y="-554"/>
+            <point key="canvasLocation" x="-2206" y="1015"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xec-1w-WlW"/>
+    </inferredMetricsTieBreakers>
 </document>

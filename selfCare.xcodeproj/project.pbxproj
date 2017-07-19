@@ -13,7 +13,8 @@
 		5A37FECD1F19784E00CF9054 /* selfCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A37FECB1F19784E00CF9054 /* selfCare.xcdatamodeld */; };
 		5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A37FECE1F19784E00CF9054 /* Assets.xcassets */; };
 		5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A37FED01F19784E00CF9054 /* LaunchScreen.storyboard */; };
-		5ACF19821F1D862E00912B38 /* JournalHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACF19801F1D862E00912B38 /* JournalHistory.storyboard */; };
+		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
+		5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19871F1ED70A00912B38 /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		5A37FECE1F19784E00CF9054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A37FED11F19784E00CF9054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A37FED31F19784E00CF9054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5ACF19811F1D862E00912B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/JournalHistory.storyboard; sourceTree = "<group>"; };
+		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
+		5ACF19871F1ED70A00912B38 /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				5A37FEC61F19784E00CF9054 /* ViewController.swift */,
+				5ACF19871F1ED70A00912B38 /* InitialView.swift */,
+				5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -79,7 +83,6 @@
 		5ACF19841F1D866E00912B38 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				5ACF19801F1D862E00912B38 /* JournalHistory.storyboard */,
 				5A37FEC81F19784E00CF9054 /* Main.storyboard */,
 				5A37FED01F19784E00CF9054 /* LaunchScreen.storyboard */,
 			);
@@ -147,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */,
-				5ACF19821F1D862E00912B38 /* JournalHistory.storyboard in Resources */,
 				5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */,
 				5A37FECA1F19784E00CF9054 /* Main.storyboard in Resources */,
 			);
@@ -161,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A37FEC71F19784E00CF9054 /* ViewController.swift in Sources */,
+				5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */,
 				5A37FECD1F19784E00CF9054 /* selfCare.xcdatamodeld in Sources */,
+				5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */,
 				5A37FEC51F19784E00CF9054 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,14 +187,6 @@
 				5A37FED11F19784E00CF9054 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5ACF19801F1D862E00912B38 /* JournalHistory.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5ACF19811F1D862E00912B38 /* Base */,
-			);
-			name = JournalHistory.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
