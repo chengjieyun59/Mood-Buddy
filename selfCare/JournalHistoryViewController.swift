@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JournalHistoryViewController: UITabBarController {
+class JournalHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

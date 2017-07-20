@@ -10,6 +10,9 @@ import UIKit
 
 class DailyEndSurveyViewController: UIViewController {
 
+    // TODO: save feelingAfter & inputted timeSpent on self care
+    // if timeSpent == 0, don't save anything
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -9,6 +9,9 @@
 import UIKit
 
 class DailyStartSurveyViewController: UIViewController {
+    // TODO: don't use 2 buttons when you can use one. Take away the startDay button.
+    // TODO: keep the selectionType and store it and display in personalHistory view controller
+    
     // outlets below
     @IBOutlet weak var feelingBefore: UISegmentedControl!
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonalHistoryViewController: UITabBarController {
+class PersonalHistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
