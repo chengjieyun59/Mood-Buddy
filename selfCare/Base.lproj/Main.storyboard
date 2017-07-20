@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jcb-La-LU5">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -34,17 +34,17 @@
         <!--Self Care-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DailyStartSurveyViewControllerStoryboardID" id="BYZ-38-t0r" customClass="DailyStartSurveyViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLW-c2-bm4">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="dod-hJ-5yH"/>
                                 </constraints>
@@ -57,19 +57,19 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. What self-care would you like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnp-A6-PWX">
-                                <rect key="frame" x="40" y="174" width="244" height="21"/>
+                                <rect key="frame" x="36" y="174" width="244" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. How are you feeling emotionally?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lo-Uj-UC8">
-                                <rect key="frame" x="40" y="74" width="268" height="21"/>
+                                <rect key="frame" x="36" y="74" width="268" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMT-Ok-k4n">
-                                <rect key="frame" x="55" y="236" width="100" height="40"/>
+                                <rect key="frame" x="51" y="236" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AUs-0i-gwK"/>
@@ -79,11 +79,11 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Music"/>
                                 <connections>
-                                    <segue destination="RYP-n2-TSt" kind="show" id="WHP-R0-gJC"/>
+                                    <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xj5-eG-rFi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-vF-yFS">
-                                <rect key="frame" x="55" y="286" width="100" height="40"/>
+                                <rect key="frame" x="51" y="286" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QTM-aN-tt7"/>
@@ -93,23 +93,23 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Exercise"/>
                                 <connections>
-                                    <segue destination="YAT-j7-ABh" kind="show" id="i9R-Ru-N4g"/>
+                                    <action selector="exerciseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qs-2c-GLa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10 is great)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tw-cQ-0gp">
-                                <rect key="frame" x="55" y="105" width="91" height="21"/>
+                                <rect key="frame" x="51" y="105" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to do today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-vy-a2P">
-                                <rect key="frame" x="55" y="205" width="96" height="21"/>
+                                <rect key="frame" x="51" y="205" width="96" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-HO-KW9">
-                                <rect key="frame" x="55" y="136" width="304" height="29"/>
+                                <rect key="frame" x="51" y="136" width="273" height="29"/>
                                 <segments>
                                     <segment title="1"/>
                                     <segment title="2"/>
@@ -124,7 +124,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6s-nj-oIl">
-                                <rect key="frame" x="55" y="336" width="100" height="40"/>
+                                <rect key="frame" x="51" y="336" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="IGt-5e-Pzl"/>
@@ -134,11 +134,11 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Journal"/>
                                 <connections>
-                                    <segue destination="VFr-4p-db5" kind="show" id="6LU-iQ-f2Z"/>
+                                    <action selector="journalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cas-UU-9BS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-de-hyZ">
-                                <rect key="frame" x="184" y="627" width="210" height="40"/>
+                                <rect key="frame" x="145" y="558" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Qvm-cp-AER"/>
@@ -147,6 +147,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Let's get started!"/>
+                                <connections>
+                                    <action selector="startDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZf-NB-FMr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,25 +180,34 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Self Care" id="urC-rE-9iB"/>
+                    <connections>
+                        <outlet property="exercise" destination="QRi-vF-yFS" id="BtI-ey-VZL"/>
+                        <outlet property="feelingBefore" destination="Ze5-HO-KW9" id="xOk-SN-UO3"/>
+                        <outlet property="journal" destination="h6s-nj-oIl" id="PD5-VI-Mmn"/>
+                        <outlet property="music" destination="uMT-Ok-k4n" id="utp-TL-u6S"/>
+                        <segue destination="YAT-j7-ABh" kind="show" identifier="toExercise" id="kBS-2e-iFN"/>
+                        <segue destination="VFr-4p-db5" kind="show" identifier="toJournal" id="I40-CV-awu"/>
+                        <segue destination="RYP-n2-TSt" kind="show" identifier="toMusic" action="showDetailViewController:sender:" id="ATy-Lw-nAr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-794" y="228"/>
         </scene>
-        <!--View Controller-->
+        <!--Music View Controller-->
         <scene sceneID="viN-NV-wvg">
             <objects>
-                <viewController id="RYP-n2-TSt" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RYP-n2-TSt" customClass="MusicViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vx4-5N-Dds"/>
                         <viewControllerLayoutGuide type="bottom" id="MAo-Cc-Bzw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VJM-TS-nmH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QL-D5-7Rr">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="X58-Es-sVG"/>
                                 </constraints>
@@ -208,7 +220,7 @@
                                 </items>
                             </navigationBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-sE-MA0">
-                                <rect key="frame" x="0.0" y="64" width="414" height="29"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
                                 <segments>
                                     <segment title="All"/>
                                     <segment title="Played"/>
@@ -216,7 +228,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZv-BU-rRP">
-                                <rect key="frame" x="184" y="676" width="210" height="40"/>
+                                <rect key="frame" x="145" y="607" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BZ6-GN-8TV"/>
@@ -245,22 +257,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5X-gN-z3N" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="976"/>
+            <point key="canvasLocation" x="854" y="-514"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise View Controller-->
         <scene sceneID="LEM-9w-P9g">
             <objects>
-                <viewController id="YAT-j7-ABh" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YAT-j7-ABh" customClass="ExerciseViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LjG-Dd-3HK"/>
                         <viewControllerLayoutGuide type="bottom" id="bEi-sw-j0K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aof-2B-dmK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Cj-EI-aPZ">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="qxd-DA-AL2"/>
                                 </constraints>
@@ -273,7 +285,7 @@
                                 </items>
                             </navigationBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2HI-sa-l2r">
-                                <rect key="frame" x="0.0" y="64" width="414" height="29"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
                                 <segments>
                                     <segment title="All"/>
                                     <segment title="Played"/>
@@ -281,7 +293,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xg-wj-74p">
-                                <rect key="frame" x="184" y="676" width="210" height="40"/>
+                                <rect key="frame" x="145" y="607" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="D8g-Gy-wXK"/>
@@ -314,20 +326,20 @@
             </objects>
             <point key="canvasLocation" x="854" y="227"/>
         </scene>
-        <!--View Controller-->
+        <!--Journal View Controller-->
         <scene sceneID="mRN-7c-0dI">
             <objects>
-                <viewController id="VFr-4p-db5" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VFr-4p-db5" customClass="JournalViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eyf-2h-aGb"/>
                         <viewControllerLayoutGuide type="bottom" id="tdz-SN-N8d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1ng-RF-JIG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-Nf-t8x">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="wef-Gi-dbs"/>
                                 </constraints>
@@ -340,7 +352,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-1Y-ySb">
-                                <rect key="frame" x="184" y="676" width="210" height="40"/>
+                                <rect key="frame" x="145" y="607" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6l9-tw-Tf5"/>
@@ -366,22 +378,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cZ-YP-O2S" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.62318840579712" y="-553.53260869565224"/>
+            <point key="canvasLocation" x="854" y="1030"/>
         </scene>
-        <!--View Controller-->
+        <!--Congratulations View Controller-->
         <scene sceneID="vf6-Jj-nkc">
             <objects>
-                <viewController id="X16-N1-alC" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X16-N1-alC" customClass="CongratulationsViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xdj-y8-1xW"/>
                         <viewControllerLayoutGuide type="bottom" id="A8L-sC-MXj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QLg-3e-P6p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lz8-h2-6dX">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bIP-zi-pyE"/>
                                 </constraints>
@@ -394,7 +406,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL5-lP-r5B">
-                                <rect key="frame" x="184" y="627" width="210" height="40"/>
+                                <rect key="frame" x="145" y="558" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h0Y-wE-Jns"/>
@@ -408,7 +420,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations on your  day 20 of self-care.  You're on a 8-day streak." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0w-3o-9Sv">
-                                <rect key="frame" x="20" y="74" width="374" height="93.333333333333343"/>
+                                <rect key="frame" x="20" y="74" width="335" height="93.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -431,20 +443,20 @@
             </objects>
             <point key="canvasLocation" x="1842" y="228"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily End Survey View Controller-->
         <scene sceneID="Vtb-Bd-l9k">
             <objects>
-                <viewController id="qmF-Sb-dlV" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qmF-Sb-dlV" customClass="DailyEndSurveyViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e5I-X9-qJg"/>
                         <viewControllerLayoutGuide type="bottom" id="W4c-Ct-PRl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jqz-0U-1yH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgT-Gf-kMM">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="QBs-7S-Pis"/>
                                 </constraints>
@@ -457,19 +469,19 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. How much time did you spend on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-iW-fK1">
-                                <rect key="frame" x="40" y="174" width="274" height="21"/>
+                                <rect key="frame" x="36" y="174" width="274" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. How are you feeling emotionally?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-5O-I7q">
-                                <rect key="frame" x="40" y="74" width="268" height="21"/>
+                                <rect key="frame" x="36" y="74" width="268" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuS-3W-xme">
-                                <rect key="frame" x="184" y="676" width="210" height="40"/>
+                                <rect key="frame" x="145" y="558" width="210" height="40"/>
                                 <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="E13-gn-IsR"/>
@@ -478,21 +490,24 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="YWR-DD-p0H" kind="show" id="YV4-1t-1u0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10 is great)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkn-Zu-W0b">
-                                <rect key="frame" x="55" y="105" width="91" height="21"/>
+                                <rect key="frame" x="51" y="105" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="self-care today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMI-y6-b6j">
-                                <rect key="frame" x="55" y="205" width="124" height="21"/>
+                                <rect key="frame" x="51" y="205" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vIe-pL-h8J">
-                                <rect key="frame" x="55" y="136" width="299" height="29"/>
+                                <rect key="frame" x="51" y="136" width="299" height="29"/>
                                 <segments>
                                     <segment title="1"/>
                                     <segment title="2"/>
@@ -507,7 +522,7 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvh-gZ-m3t">
-                                <rect key="frame" x="55" y="236" width="50" height="30"/>
+                                <rect key="frame" x="51" y="236" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="ulj-hW-ULU"/>
                                 </constraints>
@@ -516,7 +531,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXN-Kd-tAu">
-                                <rect key="frame" x="115" y="241" width="28" height="21"/>
+                                <rect key="frame" x="111" y="241" width="28" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -553,17 +568,17 @@
         <!--Journal History-->
         <scene sceneID="yg7-y3-rph">
             <objects>
-                <viewController id="w82-aQ-ck2" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w82-aQ-ck2" customClass="JournalHistoryViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="isI-nO-ap6"/>
                         <viewControllerLayoutGuide type="bottom" id="cAj-4c-4Va"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kLD-X8-MFS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnE-ns-6ta">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Olb-xz-Uwz"/>
                                 </constraints>
@@ -592,17 +607,17 @@
         <!--Personal History-->
         <scene sceneID="WNc-XB-UuL">
             <objects>
-                <viewController id="YWR-DD-p0H" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YWR-DD-p0H" customClass="PersonalHistoryViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dEZ-kZ-nKh"/>
                         <viewControllerLayoutGuide type="bottom" id="bbb-fM-rYx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="L7C-Va-ZZk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkD-vC-Jgy">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="fAC-hz-cy3"/>
                                 </constraints>
@@ -631,17 +646,17 @@
         <!--Resources-->
         <scene sceneID="ZtW-Ri-p0J">
             <objects>
-                <viewController id="9Rg-T3-iNL" customClass="ViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Rg-T3-iNL" customClass="ResourcesViewController" customModule="selfCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8YK-CX-blL"/>
                         <viewControllerLayoutGuide type="bottom" id="p0L-Hh-7NO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I5p-6d-ZpB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wF-ld-WON">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="NK8-mO-2gb"/>
                                 </constraints>
@@ -669,6 +684,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xec-1w-WlW"/>
+        <segue reference="Zzg-Bz-41F"/>
+        <segue reference="YV4-1t-1u0"/>
     </inferredMetricsTieBreakers>
 </document>
