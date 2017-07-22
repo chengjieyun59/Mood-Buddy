@@ -9,6 +9,9 @@
 import Foundation
 
 extension Date {
+    
+    //look up how to convert a date to a string in the format of 07/21/2017. "date formatter"
+    
     func convertToString() -> String {
         return DateFormatter.localizedString(from: self, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
     }
