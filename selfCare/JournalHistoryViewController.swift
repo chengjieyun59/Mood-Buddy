@@ -8,15 +8,15 @@
 
 import UIKit
 
-class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class JournalHistoryViewController: UIViewController{ //, UITableViewDelegate, UITableViewDataSource
 
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        // tableView.delegate = self
+        // tableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +26,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         // Dispose of any resources that can be recreated.
     }
     
+    /*
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
     }
@@ -34,7 +35,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         
     }
     
-    
+    */
     
 
     /*
