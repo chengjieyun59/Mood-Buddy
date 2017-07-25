@@ -261,7 +261,7 @@
                                 <rect key="frame" x="0.0" y="88" width="320" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oJW-nx-ZuK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicTableViewCell" id="oJW-nx-ZuK">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJW-nx-ZuK" id="5FH-j5-QhE">
@@ -344,7 +344,7 @@
                                 <rect key="frame" x="0.0" y="88" width="320" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RM7-3l-cJS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseTableViewCell" id="RM7-3l-cJS">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RM7-3l-cJS" id="z3f-gd-pHu">
@@ -414,7 +414,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
                                 <connections>
-                                    <segue destination="X16-N1-alC" kind="show" identifier="DoneForTheDay" animates="NO" id="Zzg-Bz-41F"/>
+                                    <segue destination="X16-N1-alC" kind="show" identifier="SaveAndDoneForTheDay" animates="NO" id="Zzg-Bz-41F"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgu-sb-ZRm">
@@ -446,6 +446,10 @@
                             <constraint firstAttribute="trailing" secondItem="DMP-1Y-ySb" secondAttribute="trailing" constant="20" id="v5G-w5-JFl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="journalContent" destination="wj6-Cr-RCO" id="iQ9-Eg-Mmo"/>
+                        <outlet property="journalTitle" destination="Zgu-sb-ZRm" id="OJr-Ny-6kj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cZ-YP-O2S" sceneMemberID="firstResponder"/>
             </objects>
@@ -665,13 +669,47 @@
                                 <rect key="frame" x="0.0" y="60" width="320" height="371"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mec-lG-FrX">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JournayHistoryTableViewCell" id="Mec-lG-FrX" customClass="JournalHistoryTableViewCell" customModule="selfCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mec-lG-FrX" id="Rfp-xf-h9p">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2Q-3g-dny">
+                                                    <rect key="frame" x="18" y="0.0" width="100" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Modification Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG0-jt-x85">
+                                                    <rect key="frame" x="28" y="22" width="157" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0O-xz-SGQ">
+                                                    <rect key="frame" x="205" y="22" width="97" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DG0-jt-x85" firstAttribute="top" secondItem="y2Q-3g-dny" secondAttribute="bottom" constant="0.5" id="ENb-xL-E8g"/>
+                                                <constraint firstItem="j0O-xz-SGQ" firstAttribute="centerY" secondItem="DG0-jt-x85" secondAttribute="centerY" id="MN1-le-Llo"/>
+                                                <constraint firstItem="j0O-xz-SGQ" firstAttribute="leading" secondItem="DG0-jt-x85" secondAttribute="trailing" constant="20" id="RNl-ii-KqL"/>
+                                                <constraint firstItem="y2Q-3g-dny" firstAttribute="top" secondItem="Rfp-xf-h9p" secondAttribute="top" id="XxN-td-kCR"/>
+                                                <constraint firstItem="DG0-jt-x85" firstAttribute="leading" secondItem="Rfp-xf-h9p" secondAttribute="leadingMargin" constant="20" id="vYa-gx-Iyw"/>
+                                                <constraint firstItem="y2Q-3g-dny" firstAttribute="leading" secondItem="Rfp-xf-h9p" secondAttribute="leadingMargin" constant="10" id="vpa-xl-Jku"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="JournalContentLabel" destination="j0O-xz-SGQ" id="owx-tX-Drn"/>
+                                            <outlet property="JournalModificationTimeLabel" destination="DG0-jt-x85" id="uh7-8F-tPP"/>
+                                            <outlet property="JournalTitleLabel" destination="y2Q-3g-dny" id="YR6-VO-Mam"/>
+                                            <segue destination="VFr-4p-db5" kind="show" identifier="displayJournal" id="tcc-k5-fjy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -688,13 +726,68 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Journal History" id="Boj-cW-aOL"/>
-                    <connections>
-                        <outlet property="tableView" destination="MzA-1Y-uvW" id="rlr-rb-zcE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUL-DP-dCm" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1494.375" y="1015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VPf-Gj-owe">
+            <objects>
+                <viewController id="els-JA-Ued" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E4z-Jy-tqZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PTh-BE-flr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u6w-XS-xc4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mif-Uw-DPz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0QK-HO-G07"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Previous Mood Journal" id="rAe-e4-WJa"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-yc-vLD">
+                                <rect key="frame" x="36" y="80" width="248" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DVo-HN-XnL">
+                                <rect key="frame" x="36" y="130" width="248" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DVo-HN-XnL" secondAttribute="trailing" constant="20" id="6OU-IJ-vky"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lcS-yc-vLD" secondAttribute="trailing" constant="20" id="Avf-4y-dOB"/>
+                            <constraint firstItem="lcS-yc-vLD" firstAttribute="leading" secondItem="u6w-XS-xc4" secondAttribute="leadingMargin" constant="20" id="BQV-8w-fXi"/>
+                            <constraint firstItem="DVo-HN-XnL" firstAttribute="leading" secondItem="u6w-XS-xc4" secondAttribute="leadingMargin" constant="20" id="VLa-zw-nms"/>
+                            <constraint firstAttribute="trailing" secondItem="Mif-Uw-DPz" secondAttribute="trailing" id="WTZ-G7-YwA"/>
+                            <constraint firstItem="lcS-yc-vLD" firstAttribute="top" secondItem="Mif-Uw-DPz" secondAttribute="bottom" constant="20" id="mWu-p6-u2D"/>
+                            <constraint firstItem="DVo-HN-XnL" firstAttribute="top" secondItem="lcS-yc-vLD" secondAttribute="bottom" constant="20" id="pob-wU-y3D"/>
+                            <constraint firstItem="PTh-BE-flr" firstAttribute="top" secondItem="DVo-HN-XnL" secondAttribute="bottom" constant="100" id="sWT-pG-7rx"/>
+                            <constraint firstItem="Mif-Uw-DPz" firstAttribute="leading" secondItem="u6w-XS-xc4" secondAttribute="leading" id="tGO-LJ-QRF"/>
+                            <constraint firstItem="Mif-Uw-DPz" firstAttribute="top" secondItem="E4z-Jy-tqZ" secondAttribute="bottom" constant="-20" id="xWj-2P-Iqd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpz-ql-Te6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1494" y="1815"/>
         </scene>
         <!--Personal History-->
         <scene sceneID="WNc-XB-UuL">
@@ -743,7 +836,7 @@
                                 <rect key="frame" x="0.0" y="90" width="320" height="341"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tWZ-gZ-Y25">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selfCareDayTableViewCell" id="tWZ-gZ-Y25">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tWZ-gZ-Y25" id="o2S-cg-qks">
@@ -834,7 +927,7 @@
                                 <rect key="frame" x="0.0" y="60" width="320" height="371"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Dw6-ZJ-6as">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resourceTableViewCell" id="Dw6-ZJ-6as">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dw6-ZJ-6as" id="Pnp-08-zef">
@@ -864,6 +957,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6qR-qT-vku"/>
+        <segue reference="tcc-k5-fjy"/>
+        <segue reference="xec-1w-WlW"/>
     </inferredMetricsTieBreakers>
 </document>

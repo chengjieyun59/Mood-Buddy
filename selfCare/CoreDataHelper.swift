@@ -10,8 +10,41 @@ import Foundation
 import CoreData
 import UIKit
 
+
 class CoreDataHelper{
+    static let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    static let persistentContainer = appDelegate.persistentContainer
+    static let managedContext = persistentContainer.viewContext
     
+    // static methods
+    static func newJournal() -> Journal {
+        let journal = NSEntityDescription.insertNewObject(forEntityName: "Journal", into: managedContext) as! Journal
+        return journal
+    }
+    
+    static func saveJournal(){
+        do {
+            try managedContext.save()
+        } catch let error as NSError{
+            print("Saving failed \(error)")
+        }
+    }
+    
+    static func delete(journal: Journal){
+        managedContext.delete(journal)
+        saveJournal()
+    }
+    
+    static func retrieveJournals() -> [Journal]{
+        let fetchRequest = NSFetchRequest<Journal>(entityName: "Journal")
+        do{
+            let results = try managedContext.fetch(fetchRequest)
+            return results
+        } catch let error as NSError{
+            print("Fetching failed \(error)")
+        }
+        return []
+    }
 }
 
 class selfHelpDay{

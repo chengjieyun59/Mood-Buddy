@@ -10,6 +10,28 @@ import UIKit
 
 class JournalViewController: UIViewController {
 
+    var journal: Journal?
+    @IBOutlet weak var journalTitle: UITextField!
+    @IBOutlet weak var journalContent: UITextView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        journalTitle.text = journal?.title ?? ""
+        journalContent.text = journal?.content ?? ""
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SaveAndDoneForTheDay"{
+            let journal = self.journal ?? CoreDataHelper.newJournal()
+            journal.title = journalTitle.text ?? ""
+            journal.content = journalContent.text ?? ""
+            journal.modificationTime = Date() as NSDate
+            CoreDataHelper.saveJournal()
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
