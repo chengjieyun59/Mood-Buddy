@@ -10,10 +10,19 @@ import Foundation
 
 extension Date {
     
-    //look up how to convert a date to a string in the format of 07/21/2017. "date formatter"
-    
+    //Convert a date to a string in the format of 07/21/2017. "date formatter"
     func convertToString() -> String {
-        return DateFormatter.localizedString(from: self, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let myString = formatter.string(from: date)
+        let yourDate: Date? = formatter.date(from: myString)
+        formatter.dateFormat = "E MM/dd/yy at h:mm a"
+        // shows in the format of: Tue 07/25/17 at 10 AM
+        
+        let updatedString = formatter.string(from: yourDate!)
+        return updatedString
     }
 } //Display the date
 
