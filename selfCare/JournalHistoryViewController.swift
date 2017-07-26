@@ -8,7 +8,11 @@
 
 import UIKit
 
-class JournalHistoryViewController: UITableViewController{ //, UITableViewDelegate, UITableViewDataSource
+class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     var journals = [Journal](){
         didSet{
             tableView.reloadData()
@@ -18,8 +22,8 @@ class JournalHistoryViewController: UITableViewController{ //, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self as? UITableViewDelegate
-        tableView.dataSource = self as? UITableViewDataSource
+        tableView.delegate = self
+        tableView.dataSource = self
         journals = CoreDataHelper.retrieveJournals()
         // Do any additional setup after loading the view.
     }
@@ -29,11 +33,11 @@ class JournalHistoryViewController: UITableViewController{ //, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return journals.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JournayHistoryTableViewCell", for: indexPath) as! JournalHistoryTableViewCell
         let row = indexPath.row
         let journal = journals[row]
@@ -57,7 +61,7 @@ class JournalHistoryViewController: UITableViewController{ //, UITableViewDelega
         }
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == .delete{
             CoreDataHelper.delete(journal: journals[indexPath.row])
             journals = CoreDataHelper.retrieveJournals()

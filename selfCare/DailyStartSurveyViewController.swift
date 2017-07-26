@@ -34,15 +34,15 @@ class DailyStartSurveyViewController: UIViewController {
     
     @IBAction func startDay(_ sender: Any) {
         if selectionType == 1 {
-            performSegue(withIdentifier: "toMusic", sender: self)
+            performSegue(withIdentifier: "toMusic", sender: nil)
         }
         
         if selectionType == 2 {
-            performSegue(withIdentifier: "toExercise", sender: self)
+            performSegue(withIdentifier: "toExercise", sender: nil)
         }
         
         if selectionType == 3 {
-            performSegue(withIdentifier: "toJournal", sender: self)
+            performSegue(withIdentifier: "toJournal", sender: nil)
         }
         // TODO: else: pop up a notification to say they haven't selected a self-care method
     }
@@ -50,7 +50,7 @@ class DailyStartSurveyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController!.navigationBar.isTranslucent = false
         // Do any additional setup after loading the view.
     }
 
