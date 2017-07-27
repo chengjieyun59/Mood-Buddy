@@ -25,7 +25,11 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         tableView.dataSource = self
         journals = CoreDataHelper.retrieveJournals()
         // Do any additional setup after loading the view.
-    }
+    } // this gets called every time right after the view loads
+    
+    override func viewWillAppear(_ animated: Bool) {
+        journals = CoreDataHelper.retrieveJournals()
+    } // this gets called every time the user switch tab
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,19 +55,14 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier{
             if identifier == "displayJournal"{
-                //present(JournalViewController: UIViewController, animated: true)
-                
                 print("User tapped the cell")
                 let indexPath = tableView.indexPathForSelectedRow!
                 let journal = journals[indexPath.row]
                 let journalViewController = segue.destination as! JournalViewController
                 journalViewController.journal = journal
-            } //     var isModalInPopover: Bool = {get set}
+                journalViewController.shouldEnableUserInteraction = false // disable user interaction in JournalViewController ViewDidLoad function
+            }
         }
-    }
-    
-    override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
-        //code
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){

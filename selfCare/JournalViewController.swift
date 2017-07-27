@@ -9,10 +9,12 @@
 import UIKit
 
 class JournalViewController: UIViewController {
-
+    var shouldEnableUserInteraction: Bool = true
     var journal: Journal?
+    
     @IBOutlet weak var journalTitle: UITextField!
     @IBOutlet weak var journalContent: UITextView!
+    @IBOutlet weak var journalDoneButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,6 +39,13 @@ class JournalViewController: UIViewController {
         //Looks for single or multiple taps to dismiss the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DailyEndSurveyViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        if shouldEnableUserInteraction != true {
+            journalTitle.isUserInteractionEnabled = false //disable user interaction
+            journalContent.isScrollEnabled = true
+            journalContent.isEditable = false
+            journalDoneButton.isHidden = true //dismiss the done button
+        }
     }
     
     //Calls this function when the tap is recognized.

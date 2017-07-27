@@ -21,7 +21,7 @@ class ExerciseViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var myExercise = CoreDataHelper.newExercise()
+        let myExercise = CoreDataHelper.newExercise()
         myExercise.title = "Running"
         exercises.append(myExercise)
         

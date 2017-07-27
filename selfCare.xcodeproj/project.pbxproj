@@ -16,7 +16,6 @@
 		5AA166491F217DD200588B0F /* DateConvertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166481F217DD200588B0F /* DateConvertToString.swift */; };
 		5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */; };
 		5AB7DF9F1F295EA500053670 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */; };
-		5AB7DFA51F2A6B6D00053670 /* PersonalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DFA41F2A6B6D00053670 /* PersonalHistoryTableViewCell.swift */; };
 		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
 		5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19871F1ED70A00912B38 /* InitialView.swift */; };
 		5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC811F2133C4002CA10C /* JournalViewController.swift */; };
@@ -41,7 +40,6 @@
 		5AA166481F217DD200588B0F /* DateConvertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvertToString.swift; sourceTree = "<group>"; };
 		5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
-		5AB7DFA41F2A6B6D00053670 /* PersonalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
 		5ACF19871F1ED70A00912B38 /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		5AD4EC811F2133C4002CA10C /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			children = (
 				5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */,
 				5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */,
-				5AB7DFA41F2A6B6D00053670 /* PersonalHistoryTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -212,7 +209,6 @@
 				5AD4EC841F2133D2002CA10C /* ExerciseViewController.swift in Sources */,
 				5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */,
 				5AB7DF9F1F295EA500053670 /* ExerciseTableViewCell.swift in Sources */,
-				5AB7DFA51F2A6B6D00053670 /* PersonalHistoryTableViewCell.swift in Sources */,
 				5A37FECD1F19784E00CF9054 /* selfCare.xcdatamodeld in Sources */,
 				5AD4EC861F2133DE002CA10C /* MusicViewController.swift in Sources */,
 				5AD4EC8E1F215400002CA10C /* PersonalHistoryViewController.swift in Sources */,
