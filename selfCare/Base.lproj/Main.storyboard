@@ -374,17 +374,17 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
                                 <connections>
-                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="DoneForTheDay" id="fYl-sw-Ffe"/>
+                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="SaveAndDoneForTheDay" id="fYl-sw-Ffe"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgu-sb-ZRm">
-                                <rect key="frame" x="36" y="84" width="248" height="30"/>
+                                <rect key="frame" x="36" y="40" width="248" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Today..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wj6-Cr-RCO">
-                                <rect key="frame" x="36" y="134" width="248" height="285"/>
+                                <rect key="frame" x="36" y="90" width="248" height="329"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -834,6 +834,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tcc-k5-fjy"/>
-        <segue reference="OGU-zy-wf7"/>
+        <segue reference="fYl-sw-Ffe"/>
     </inferredMetricsTieBreakers>
 </document>

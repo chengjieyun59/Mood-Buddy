@@ -35,6 +35,19 @@ class CoreDataHelper{
         saveJournal()
     }
     
+    static func retrieveJournals() -> [Journal]{
+        let fetchRequest = NSFetchRequest<Journal>(entityName: "Journal")
+        do{
+            let results = try managedContext.fetch(fetchRequest)
+            return results
+        } catch let error as NSError{
+            print("Fetching failed \(error)")
+        }
+        return []
+    }
+    
+    
+    
     
     // static methods for Exercises:
     static func newExercise() -> Exercise {
@@ -52,18 +65,7 @@ class CoreDataHelper{
     
     static func delete(exercise: Exercise){
         managedContext.delete(exercise)
-        saveJournal()
-    }
-    
-    static func retrieveJournals() -> [Journal]{
-        let fetchRequest = NSFetchRequest<Journal>(entityName: "Journal")
-        do{
-            let results = try managedContext.fetch(fetchRequest)
-            return results
-        } catch let error as NSError{
-            print("Fetching failed \(error)")
-        }
-        return []
+        saveExercise()
     }
 }
 
