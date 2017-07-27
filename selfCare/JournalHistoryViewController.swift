@@ -51,13 +51,19 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier{
             if identifier == "displayJournal"{
+                //present(JournalViewController: UIViewController, animated: true)
+                
                 print("User tapped the cell")
                 let indexPath = tableView.indexPathForSelectedRow!
                 let journal = journals[indexPath.row]
                 let journalViewController = segue.destination as! JournalViewController
                 journalViewController.journal = journal
-            }
+            } //     var isModalInPopover: Bool = {get set}
         }
+    }
+    
+    override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+        //code
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){

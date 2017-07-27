@@ -29,7 +29,6 @@ class JournalViewController: UIViewController {
             journal.modificationTime = Date() as NSDate
             CoreDataHelper.saveJournal()
         }
-        
     }
     
     override func viewDidLoad() {

@@ -24,12 +24,15 @@ class DailyStartSurveyViewController: UIViewController {
     // actions below
     @IBAction func musicButton(_ sender: Any) {
         selectionType = 1
+        // selfHelpDay.selfHelpUsed = "music"
     }
     @IBAction func exerciseButton(_ sender: Any) {
         selectionType = 2
+        // selfHelpDay.selfHelpUsed = "exercise"
     }
     @IBAction func journalButton(_ sender: Any) {
         selectionType = 3
+        // selfHelpDay.selfHelpUsed = "journal"
     }
     
     @IBAction func startDay(_ sender: Any) {
