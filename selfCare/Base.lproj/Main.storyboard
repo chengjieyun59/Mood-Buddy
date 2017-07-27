@@ -185,7 +185,7 @@
                         <outlet property="feelingBefore" destination="Ze5-HO-KW9" id="xOk-SN-UO3"/>
                         <outlet property="journal" destination="h6s-nj-oIl" id="PD5-VI-Mmn"/>
                         <outlet property="music" destination="uMT-Ok-k4n" id="utp-TL-u6S"/>
-                        <segue destination="YAT-j7-ABh" kind="show" identifier="toExercise" animates="NO" id="kBS-2e-iFN"/>
+                        <segue destination="YAT-j7-ABh" kind="show" identifier="toExercise" id="kBS-2e-iFN"/>
                         <segue destination="RYP-n2-TSt" kind="show" identifier="toMusic" id="Fki-7c-u9d"/>
                         <segue destination="VFr-4p-db5" kind="show" identifier="toJournal" id="ZwI-Gj-XS5"/>
                     </connections>
@@ -225,7 +225,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
                                 <connections>
-                                    <segue destination="X16-N1-alC" kind="show" identifier="DoneForTheDay" animates="NO" id="xec-1w-WlW"/>
+                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="DoneForTheDay" id="LT2-sT-TxC"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-UT-xbj">
@@ -293,20 +293,36 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
                                 <connections>
-                                    <segue destination="X16-N1-alC" kind="show" identifier="DoneForTheDay" animates="NO" id="6qR-qT-vku"/>
+                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="DoneForTheDay" id="OGU-zy-wf7"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fI2-xn-EiS">
                                 <rect key="frame" x="0.0" y="93" width="320" height="346"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseTableViewCell" id="RM7-3l-cJS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseTableViewCell" id="RM7-3l-cJS" customClass="ExerciseTableViewCell" customModule="selfCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RM7-3l-cJS" id="z3f-gd-pHu">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpb-Jg-kXu">
+                                                    <rect key="frame" x="18" y="11" width="284" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vpb-Jg-kXu" secondAttribute="trailing" constant="10" id="Aot-Qy-XNS"/>
+                                                <constraint firstItem="vpb-Jg-kXu" firstAttribute="leading" secondItem="z3f-gd-pHu" secondAttribute="leadingMargin" constant="10" id="Kh2-aN-KLI"/>
+                                                <constraint firstItem="vpb-Jg-kXu" firstAttribute="centerY" secondItem="z3f-gd-pHu" secondAttribute="centerY" id="g9f-6t-Led"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="exerciseLabel" destination="vpb-Jg-kXu" id="CgQ-G7-mPU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -327,10 +343,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exercise ★★☆" id="w3B-Rl-I5V"/>
+                    <connections>
+                        <outlet property="tableView" destination="fI2-xn-EiS" id="wGI-mo-iLd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YT-0q-r9J" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="82"/>
+            <point key="canvasLocation" x="1687.5" y="81.338028169014081"/>
         </scene>
         <!--Mood Journal ★★☆-->
         <scene sceneID="mRN-7c-0dI">
@@ -355,7 +374,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Done for today!"/>
                                 <connections>
-                                    <segue destination="X16-N1-alC" kind="show" identifier="SaveAndDoneForTheDay" animates="NO" id="Zzg-Bz-41F"/>
+                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="DoneForTheDay" id="fYl-sw-Ffe"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zgu-sb-ZRm">
@@ -406,20 +425,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL5-lP-r5B">
-                                <rect key="frame" x="90" y="459" width="210" height="40"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="h0Y-wE-Jns"/>
-                                    <constraint firstAttribute="width" constant="210" id="x0A-YG-40G"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Yay!"/>
-                                <connections>
-                                    <segue destination="qmF-Sb-dlV" kind="show" identifier="Yay" animates="NO" id="fVK-il-Tif"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations on your  day 20 of self-care.  You're on a 8-day streak." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0w-3o-9Sv">
                                 <rect key="frame" x="20" y="74" width="280" height="93.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -429,18 +434,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="RL5-lP-r5B" secondAttribute="trailing" constant="20" id="AcO-Ge-qDY"/>
                             <constraint firstItem="g0w-3o-9Sv" firstAttribute="top" secondItem="Xdj-y8-1xW" secondAttribute="bottom" constant="10" id="FXj-VO-HJb"/>
                             <constraint firstAttribute="trailing" secondItem="g0w-3o-9Sv" secondAttribute="trailing" constant="20" id="GPa-06-Yal"/>
                             <constraint firstItem="g0w-3o-9Sv" firstAttribute="leading" secondItem="QLg-3e-P6p" secondAttribute="leading" constant="20" id="Hv9-d1-dmF"/>
-                            <constraint firstItem="A8L-sC-MXj" firstAttribute="top" secondItem="RL5-lP-r5B" secondAttribute="bottom" constant="20" id="hFC-q7-pss"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Congratulations! 🎉" id="buz-Un-Mgh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQJ-tT-Uwz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2833" y="83"/>
+            <point key="canvasLocation" x="3904" y="80"/>
         </scene>
         <!--Daily Ending Survey ★★★-->
         <scene sceneID="Vtb-Bd-l9k">
@@ -476,6 +479,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <segue destination="X16-N1-alC" kind="show" identifier="Submit" id="EOf-uT-zB9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10 is great)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkn-Zu-W0b">
                                 <rect key="frame" x="51" y="105" width="91" height="21"/>
@@ -544,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8c-Am-aUU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3863" y="83"/>
+            <point key="canvasLocation" x="2906" y="81"/>
         </scene>
         <!--Journal History-->
         <scene sceneID="yg7-y3-rph">
@@ -828,6 +834,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tcc-k5-fjy"/>
-        <segue reference="xec-1w-WlW"/>
+        <segue reference="OGU-zy-wf7"/>
     </inferredMetricsTieBreakers>
 </document>

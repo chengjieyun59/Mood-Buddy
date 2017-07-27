@@ -21,7 +21,10 @@ class PersonalHistoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -16,7 +16,7 @@ class CoreDataHelper{
     static let persistentContainer = appDelegate.persistentContainer
     static let managedContext = persistentContainer.viewContext
     
-    // static methods
+    // static methods for Journals:
     static func newJournal() -> Journal {
         let journal = NSEntityDescription.insertNewObject(forEntityName: "Journal", into: managedContext) as! Journal
         return journal
@@ -32,6 +32,26 @@ class CoreDataHelper{
     
     static func delete(journal: Journal){
         managedContext.delete(journal)
+        saveJournal()
+    }
+    
+    
+    // static methods for Exercises:
+    static func newExercise() -> Exercise {
+        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: managedContext) as! Exercise
+        return exercise
+    }
+    
+    static func saveExercise(){
+        do {
+            try managedContext.save()
+        } catch let error as NSError{
+            print("Saving failed \(error)")
+        }
+    }
+    
+    static func delete(exercise: Exercise){
+        managedContext.delete(exercise)
         saveJournal()
     }
     

@@ -12,7 +12,6 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     var journals = [Journal](){
         didSet{
             tableView.reloadData()
