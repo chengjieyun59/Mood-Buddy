@@ -46,9 +46,7 @@ class CoreDataHelper{
         return []
     }
     
-    
-    
-    
+    /*
     // static methods for Exercises:
     static func newExercise() -> Exercise {
         let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: managedContext) as! Exercise
@@ -67,6 +65,7 @@ class CoreDataHelper{
         managedContext.delete(exercise)
         saveExercise()
     }
+    */
 }
 
 class selfHelpDay{
