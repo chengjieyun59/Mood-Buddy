@@ -7,18 +7,54 @@
 //
 
 import UIKit
+import AVFoundation
 
-class MusicViewController: UIViewController {
+class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var sound: AVAudioPlayer!
 
+    let musics = ["cat", "life", "crash"]
+
+    func playSound(soundName : String){
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        do {
+            sound = try AVAudioPlayer(contentsOf: url!)
+            sound.play()
+        } catch {
+            print("error loading file")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return musics.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "musicTableViewCell", for: indexPath) as! MusicTableViewCell
+        let row = indexPath.row
+        let music = musics[row]
+        
+        cell.musicLabel.text = music
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // tap cell to play
+    // tap cell again to stop
+    // tap another cell: stop current one and start that one
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        playSound(soundName: musics[indexPath.row])
     }
     
 

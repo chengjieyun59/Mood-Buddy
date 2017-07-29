@@ -232,13 +232,25 @@
                                 <rect key="frame" x="0.0" y="93" width="320" height="346"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicTableViewCell" id="oJW-nx-ZuK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicTableViewCell" id="oJW-nx-ZuK" customClass="MusicTableViewCell" customModule="selfCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJW-nx-ZuK" id="5FH-j5-QhE">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="musicLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2r-wH-OKw">
+                                                    <rect key="frame" x="20" y="8" width="87" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="musicLabel" destination="S2r-wH-OKw" id="C1l-UF-Lhr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -257,6 +269,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Soothing Music ★★☆" id="9AG-an-3SR"/>
+                    <connections>
+                        <outlet property="tableView" destination="ScC-UT-xbj" id="skg-SB-Hfb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5X-gN-z3N" sceneMemberID="firstResponder"/>
             </objects>
@@ -876,6 +891,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tcc-k5-fjy"/>
-        <segue reference="fYl-sw-Ffe"/>
+        <segue reference="LT2-sT-TxC"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,6 +16,10 @@
 		5AA166491F217DD200588B0F /* DateConvertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166481F217DD200588B0F /* DateConvertToString.swift */; };
 		5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */; };
 		5AB7DF9F1F295EA500053670 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */; };
+		5AB7DFA71F2BDE0700053670 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFA61F2BDE0700053670 /* cat.wav */; };
+		5AB7DFA91F2BE14200053670 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DFA81F2BE14200053670 /* MusicTableViewCell.swift */; };
+		5AB7DFAD1F2C0A5300053670 /* life.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFAC1F2C0A5300053670 /* life.wav */; };
+		5AB7DFAF1F2C0A7A00053670 /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFAE1F2C0A7A00053670 /* crash.wav */; };
 		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
 		5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19871F1ED70A00912B38 /* InitialView.swift */; };
 		5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC811F2133C4002CA10C /* JournalViewController.swift */; };
@@ -40,6 +44,10 @@
 		5AA166481F217DD200588B0F /* DateConvertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvertToString.swift; sourceTree = "<group>"; };
 		5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		5AB7DFA61F2BDE0700053670 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
+		5AB7DFA81F2BE14200053670 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		5AB7DFAC1F2C0A5300053670 /* life.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = life.wav; sourceTree = "<group>"; };
+		5AB7DFAE1F2C0A7A00053670 /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
 		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
 		5ACF19871F1ED70A00912B38 /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		5AD4EC811F2133C4002CA10C /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
@@ -99,9 +107,20 @@
 			isa = PBXGroup;
 			children = (
 				5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */,
+				5AB7DFA81F2BE14200053670 /* MusicTableViewCell.swift */,
 				5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		5AB7DFB01F2C0AA500053670 /* Music audio files */ = {
+			isa = PBXGroup;
+			children = (
+				5AB7DFA61F2BDE0700053670 /* cat.wav */,
+				5AB7DFAC1F2C0A5300053670 /* life.wav */,
+				5AB7DFAE1F2C0A7A00053670 /* crash.wav */,
+			);
+			name = "Music audio files";
 			sourceTree = "<group>";
 		};
 		5ACF19831F1D865900912B38 /* Controllers */ = {
@@ -110,6 +129,7 @@
 				5ACF19871F1ED70A00912B38 /* InitialView.swift */,
 				5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */,
 				5AD4EC851F2133DE002CA10C /* MusicViewController.swift */,
+				5AB7DFB01F2C0AA500053670 /* Music audio files */,
 				5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */,
 				5AD4EC811F2133C4002CA10C /* JournalViewController.swift */,
 				5AD4EC891F215331002CA10C /* CongratulationsViewController.swift */,
@@ -190,9 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB7DFAD1F2C0A5300053670 /* life.wav in Resources */,
 				5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */,
 				5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */,
+				5AB7DFAF1F2C0A7A00053670 /* crash.wav in Resources */,
 				5A37FECA1F19784E00CF9054 /* Main.storyboard in Resources */,
+				5AB7DFA71F2BDE0700053670 /* cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +241,7 @@
 				5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */,
 				5AD4EC901F215425002CA10C /* JournalHistoryViewController.swift in Sources */,
 				5AD4EC8A1F215331002CA10C /* CongratulationsViewController.swift in Sources */,
+				5AB7DFA91F2BE14200053670 /* MusicTableViewCell.swift in Sources */,
 				5A37FEC51F19784E00CF9054 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
