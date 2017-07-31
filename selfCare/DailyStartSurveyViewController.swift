@@ -32,6 +32,7 @@ class DailyStartSurveyViewController: UIViewController {
         selectionType = 3
     }
     
+    /*
     @IBAction func startDay(_ sender: Any) {
         if selectionType == 1 {
             performSegue(withIdentifier: "toMusic", sender: nil)
@@ -46,6 +47,7 @@ class DailyStartSurveyViewController: UIViewController {
         }
         // TODO: else: pop up a notification to say they haven't selected a self-care method
     }
+    */
 
 
     override func viewDidLoad() {

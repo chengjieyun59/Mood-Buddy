@@ -11,7 +11,7 @@ import UIKit
 class ResourcesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    let resources = ["1. National Suicide Hotline", "2. Depression Hotline", "3. Support for Sexual Assault Survivors", "4. Support for LGBTQIA", "5. 30 Day Meditation Challenge", "6. 30 Day Life-Changing Challenges", "7. Improve Relationships with Others", "8. Improve Quality of Life"]
+    let resources = ["1. National Suicide Hotline", "2. Depression Hotline", "3. Support for Sexual Assault Survivors", "4. Support for LGBTQIA", "5. 30 Day Meditation Challenge", "6. 30 Day Life-Changing Challenges", "7. Improve Relationships with Others", "8. Improve Quality of Life", "*** Credits/ Description"]
 
     /*
     func openURL() {
@@ -69,6 +69,8 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
             url = NSURL(string: "http://optimallivingdaily.com/category/optimal-living-daily-relationships/") //Improve Relationships with Others
         case 7:
             url = NSURL(string: "http://optimallivingdaily.com/category/optimallivingdaily/") //Improve Quality of Life
+        case 8:
+            url = NSURL(string: "https://docs.google.com/document/d/1-tfxAaCaIP8J849qJbWMxlzxAz7XUJdyIqBsn9oQK0w/edit")
         default:
             return;
         }
