@@ -51,6 +51,7 @@ class DailyStartSurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController!.navigationBar.isTranslucent = false
+        self.tabBarController?.tabBar.tintColor = UIColor.white
         // Do any additional setup after loading the view.
     }
 

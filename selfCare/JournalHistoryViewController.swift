@@ -20,6 +20,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.tintColor = UIColor.white
         
         tableView.delegate = self
         tableView.dataSource = self

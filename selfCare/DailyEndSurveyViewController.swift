@@ -13,6 +13,14 @@ class DailyEndSurveyViewController: UIViewController {
     // TODO: save feelingAfter & inputted timeSpent on self care
     // if timeSpent == 0, don't save anything
     
+    
+    @IBOutlet weak var feelingAfter: UISegmentedControl!
+    @IBOutlet weak var timeSpent: UITextField!
+    @IBAction func saveTheDay(_ sender: Any) {
+        // TODO: save the day
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

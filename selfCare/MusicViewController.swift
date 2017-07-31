@@ -13,7 +13,6 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView: UITableView!
     var sound: AVAudioPlayer!
-
     let musics = ["cat", "life", "crash"]
 
     func playSound(soundName : String){
