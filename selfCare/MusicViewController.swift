@@ -23,6 +23,7 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     // var image1 : UIImage = UIImage(named: "rock")!
     var musicImages : [String]!
+    var rowPlaying: Int = 8 //used to check if the same cell is tapped again to stop music
     
     func playSound(soundName : String){
         let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
@@ -69,12 +70,33 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     // tap cell to play
-    // tap cell again to stop
-    // tap another cell: stop current one and start that one
+    // tap same cell again to stop
+    // tap another cell, stop current one and start the new one
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        playSound(soundName: musics[indexPath.row])
-    }    
+        print("tapped cell")
+        if sound != nil {
+            if sound.isPlaying == true, rowPlaying == indexPath.row {
+                sound.stop() //only stop is the same cell is tapped
+            }
+            else {
+                playSound(soundName: musics[indexPath.row])
+                rowPlaying = indexPath.row
+            }
+        }
+        else {
+            playSound(soundName: musics[indexPath.row])
+            rowPlaying = indexPath.row
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DoneForTheDay"{
+            sound.stop()
+        }
+    }
+
+    
     /*
     // MARK: - Navigation
 
