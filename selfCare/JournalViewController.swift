@@ -22,11 +22,13 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         super.viewWillAppear(animated)
         
         journalTitle.text = journal?.title ?? ""
-        journalContent.text = journal?.content ?? ""
+        journalContent.text = journal?.content ?? "" //displayed from core data
         
-        journalContent.delegate = self //textView delegate
-        journalContent.text = "What happened today? How do you feel? Type it here." //have a placeholder text
-        journalContent.textColor = sameColor //make the placeholder text light gray
+        if shouldEnableUserInteraction == true { //meaning this is the first time typing in this journal entry
+            journalContent.delegate = self //textView delegate
+            journalContent.text = "What happened today? How do you feel? Type it here." //have a placeholder text
+            journalContent.textColor = sameColor //make the placeholder text light gray
+        }
         
         journalContent.layer.borderColor = color //defined above viewWillAppear function
         journalContent.layer.borderWidth = 0.6
@@ -51,7 +53,11 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         view.addGestureRecognizer(tap)
         
         if shouldEnableUserInteraction != true {
-            journalTitle.isUserInteractionEnabled = false //disable user interaction
+            journalTitle.text = journal?.title ?? ""
+            journalContent.text = journal?.content ?? ""
+            
+            //disable user interaction
+            journalTitle.isUserInteractionEnabled = false
             journalContent.isScrollEnabled = true
             journalContent.isEditable = false
             journalDoneButton.isHidden = true //dismiss the done button

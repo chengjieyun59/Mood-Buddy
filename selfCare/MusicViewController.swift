@@ -13,10 +13,16 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView: UITableView!
     var sound: AVAudioPlayer!
-    let musics = ["cat", "life", "crash"]
+    let musics = ["2.33 Bensound- Better Days",
+                  "6.36 Bensound- Little Planet",
+                  "4.48 Bensound- Relaxing",
+                  "4.16 Bensound- The Lounge",
+                  "10.00 The Miracle Sound- Meditation",
+                  "5.33 Singing Bowl",
+                  "3.48 Singing Bowls And Birds Chirping Sleep Music"]
 
     func playSound(soundName : String){
-        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
         do {
             sound = try AVAudioPlayer(contentsOf: url!)
             sound.play()

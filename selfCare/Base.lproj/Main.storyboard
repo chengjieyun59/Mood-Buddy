@@ -208,7 +208,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="musicLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2r-wH-OKw">
-                                                    <rect key="frame" x="20" y="8" width="87" height="21"/>
+                                                    <rect key="frame" x="20" y="8" width="284" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5X-gN-z3N" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="-753"/>
+            <point key="canvasLocation" x="1687.5" y="-753.16901408450701"/>
         </scene>
         <!--Exercise ★★☆-->
         <scene sceneID="LEM-9w-P9g">
@@ -888,7 +888,7 @@
         <image name="SelfCare" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6wK-xf-pog"/>
-        <segue reference="fYl-sw-Ffe"/>
+        <segue reference="LT2-sT-TxC"/>
+        <segue reference="tcc-k5-fjy"/>
     </inferredMetricsTieBreakers>
 </document>

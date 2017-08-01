@@ -16,11 +16,15 @@
 		5AA166491F217DD200588B0F /* DateConvertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166481F217DD200588B0F /* DateConvertToString.swift */; };
 		5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */; };
 		5AB7DF9F1F295EA500053670 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */; };
-		5AB7DFA71F2BDE0700053670 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFA61F2BDE0700053670 /* cat.wav */; };
 		5AB7DFA91F2BE14200053670 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DFA81F2BE14200053670 /* MusicTableViewCell.swift */; };
-		5AB7DFAD1F2C0A5300053670 /* life.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFAC1F2C0A5300053670 /* life.wav */; };
-		5AB7DFAF1F2C0A7A00053670 /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFAE1F2C0A7A00053670 /* crash.wav */; };
 		5AB7DFB41F2FA9C200053670 /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DFB31F2FA9C200053670 /* ResourceTableViewCell.swift */; };
+		5AB7DFBE1F2FF54500053670 /* 10.00 The Miracle Sound- Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFBD1F2FF54500053670 /* 10.00 The Miracle Sound- Meditation.mp3 */; };
+		5AB7DFC01F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB7DFBF1F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 */; };
+		5ABB0C671F2FF97800FE6AD2 /* 2.33 Bensound- Better Days.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C661F2FF97800FE6AD2 /* 2.33 Bensound- Better Days.mp3 */; };
+		5ABB0C691F2FFD0900FE6AD2 /* 6.36 Bensound- Little Planet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C681F2FFD0900FE6AD2 /* 6.36 Bensound- Little Planet.mp3 */; };
+		5ABB0C6B1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C6A1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 */; };
+		5ABB0C6D1F2FFD5700FE6AD2 /* 3.48 Singing Bowls And Birds Chirping Sleep Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C6C1F2FFD5700FE6AD2 /* 3.48 Singing Bowls And Birds Chirping Sleep Music.mp3 */; };
+		5ABB0C6F1F2FFD6100FE6AD2 /* 5.33 Singing Bowl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C6E1F2FFD6100FE6AD2 /* 5.33 Singing Bowl.mp3 */; };
 		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
 		5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19871F1ED70A00912B38 /* InitialView.swift */; };
 		5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC811F2133C4002CA10C /* JournalViewController.swift */; };
@@ -45,11 +49,15 @@
 		5AA166481F217DD200588B0F /* DateConvertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvertToString.swift; sourceTree = "<group>"; };
 		5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
-		5AB7DFA61F2BDE0700053670 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
 		5AB7DFA81F2BE14200053670 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
-		5AB7DFAC1F2C0A5300053670 /* life.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = life.wav; sourceTree = "<group>"; };
-		5AB7DFAE1F2C0A7A00053670 /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
 		5AB7DFB31F2FA9C200053670 /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
+		5AB7DFBD1F2FF54500053670 /* 10.00 The Miracle Sound- Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10.00 The Miracle Sound- Meditation.mp3"; sourceTree = "<group>"; };
+		5AB7DFBF1F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4.48 Bensound- Relaxing.mp3"; sourceTree = "<group>"; };
+		5ABB0C661F2FF97800FE6AD2 /* 2.33 Bensound- Better Days.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2.33 Bensound- Better Days.mp3"; sourceTree = "<group>"; };
+		5ABB0C681F2FFD0900FE6AD2 /* 6.36 Bensound- Little Planet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "6.36 Bensound- Little Planet.mp3"; sourceTree = "<group>"; };
+		5ABB0C6A1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4.16 Bensound- The Lounge.mp3"; sourceTree = "<group>"; };
+		5ABB0C6C1F2FFD5700FE6AD2 /* 3.48 Singing Bowls And Birds Chirping Sleep Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3.48 Singing Bowls And Birds Chirping Sleep Music.mp3"; sourceTree = "<group>"; };
+		5ABB0C6E1F2FFD6100FE6AD2 /* 5.33 Singing Bowl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5.33 Singing Bowl.mp3"; sourceTree = "<group>"; };
 		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
 		5ACF19871F1ED70A00912B38 /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		5AD4EC811F2133C4002CA10C /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
@@ -119,9 +127,13 @@
 		5AB7DFB01F2C0AA500053670 /* Music audio files */ = {
 			isa = PBXGroup;
 			children = (
-				5AB7DFA61F2BDE0700053670 /* cat.wav */,
-				5AB7DFAC1F2C0A5300053670 /* life.wav */,
-				5AB7DFAE1F2C0A7A00053670 /* crash.wav */,
+				5ABB0C661F2FF97800FE6AD2 /* 2.33 Bensound- Better Days.mp3 */,
+				5ABB0C681F2FFD0900FE6AD2 /* 6.36 Bensound- Little Planet.mp3 */,
+				5AB7DFBF1F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 */,
+				5ABB0C6A1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 */,
+				5AB7DFBD1F2FF54500053670 /* 10.00 The Miracle Sound- Meditation.mp3 */,
+				5ABB0C6E1F2FFD6100FE6AD2 /* 5.33 Singing Bowl.mp3 */,
+				5ABB0C6C1F2FFD5700FE6AD2 /* 3.48 Singing Bowls And Birds Chirping Sleep Music.mp3 */,
 			);
 			name = "Music audio files";
 			sourceTree = "<group>";
@@ -213,12 +225,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AB7DFAD1F2C0A5300053670 /* life.wav in Resources */,
+				5ABB0C6F1F2FFD6100FE6AD2 /* 5.33 Singing Bowl.mp3 in Resources */,
+				5AB7DFC01F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 in Resources */,
 				5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */,
 				5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */,
-				5AB7DFAF1F2C0A7A00053670 /* crash.wav in Resources */,
+				5AB7DFBE1F2FF54500053670 /* 10.00 The Miracle Sound- Meditation.mp3 in Resources */,
+				5ABB0C6D1F2FFD5700FE6AD2 /* 3.48 Singing Bowls And Birds Chirping Sleep Music.mp3 in Resources */,
+				5ABB0C6B1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 in Resources */,
 				5A37FECA1F19784E00CF9054 /* Main.storyboard in Resources */,
-				5AB7DFA71F2BDE0700053670 /* cat.wav in Resources */,
+				5ABB0C671F2FF97800FE6AD2 /* 2.33 Bensound- Better Days.mp3 in Resources */,
+				5ABB0C691F2FFD0900FE6AD2 /* 6.36 Bensound- Little Planet.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
