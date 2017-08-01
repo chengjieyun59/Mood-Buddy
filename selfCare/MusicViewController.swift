@@ -13,14 +13,17 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView: UITableView!
     var sound: AVAudioPlayer!
-    let musics = ["2.33 Bensound- Better Days",
+    let musics = ["3.48 Alexander- Birds Chirping",
+                  "10.00 Alexander- Meditation",
+                  "5.33 Alexander- Singing Bowl",
+                  "2.33 Bensound- Better Days",
                   "6.36 Bensound- Little Planet",
-                  "4.48 Bensound- Relaxing",
                   "4.16 Bensound- The Lounge",
-                  "10.00 The Miracle Sound- Meditation",
-                  "5.33 Singing Bowl",
-                  "3.48 Singing Bowls And Birds Chirping Sleep Music"]
-
+                  "4.48 Bensound- Relaxing",]
+    
+    // var image1 : UIImage = UIImage(named: "rock")!
+    var musicImages : [String]!
+    
     func playSound(soundName : String){
         let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
         do {
@@ -35,6 +38,14 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        self.musicImages = ["Birds Chirping.jpg",
+                            "Meditation.jpg",
+                            "Singing Bowl.jpg",
+                            "Better Days.jpg",
+                            "Little Planet.jpg",
+                            "The Lounge.jpg",
+                            "Relaxing.jpg"]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,6 +58,8 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let music = musics[row]
         
         cell.musicLabel.text = music
+        // cell.imageView?.image = image1
+        cell.imageView?.image = UIImage(named: musicImages[indexPath.row])
         return cell
     }
 
@@ -60,8 +73,7 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // tap another cell: stop current one and start that one
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         playSound(soundName: musics[indexPath.row])
-    }
-    
+    }    
 
     /*
     // MARK: - Navigation
