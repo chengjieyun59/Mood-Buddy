@@ -43,6 +43,10 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JournayHistoryTableViewCell", for: indexPath) as! JournalHistoryTableViewCell
+        
+        //let reversedRow = journals.count - indexPath.row - 1
+        //let journal = journals[reversedRow]
+        //the 2 lines above is equivalent to the 2 lines below
         let row = indexPath.row
         let journal = journals.reversed()[row] //reverse journal order so the last one is on top
         
@@ -56,9 +60,9 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier{
             if identifier == "displayJournal"{
-                print("User tapped the cell")
+                print("User displayed a journal")
                 let indexPath = tableView.indexPathForSelectedRow!
-                let journal = journals[indexPath.row]
+                let journal = journals.reversed()[indexPath.row]
                 let journalViewController = segue.destination as! JournalViewController
                 journalViewController.journal = journal
                 journalViewController.shouldEnableUserInteraction = false // disable user interaction in JournalViewController ViewDidLoad function
@@ -68,7 +72,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == .delete{
-            CoreDataHelper.delete(journal: journals[indexPath.row])
+            CoreDataHelper.delete(journal: journals.reversed()[indexPath.row])
             journals = CoreDataHelper.retrieveJournals()
         }
     }
