@@ -9,15 +9,14 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="SelfHelpDay" representedClassName="SelfHelpDay" syncable="YES" codeGenerationType="class">
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="feelingAfter" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="feelingBefore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="hasCompletedRunning" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="hasCompletedSitups" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="selfHelpDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timeSpent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Journal" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="Exercise" positionX="-54" positionY="18" width="128" height="60"/>
-        <element name="SelfHelpDay" positionX="-36" positionY="27" width="128" height="120"/>
+        <element name="Journal" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="SelfHelpDay" positionX="-36" positionY="27" width="128" height="105"/>
     </elements>
 </model>

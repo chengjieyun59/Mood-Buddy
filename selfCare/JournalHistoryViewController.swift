@@ -44,7 +44,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JournayHistoryTableViewCell", for: indexPath) as! JournalHistoryTableViewCell
         let row = indexPath.row
-        let journal = journals[row]
+        let journal = journals.reversed()[row] //reverse journal order so the last one is on top
         
         cell.JournalTitleLabel.text = journal.title
         cell.JournalContentLabel.text = journal.content
