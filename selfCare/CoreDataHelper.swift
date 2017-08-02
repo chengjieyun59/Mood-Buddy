@@ -16,7 +16,9 @@ class CoreDataHelper{
     static let persistentContainer = appDelegate.persistentContainer
     static let managedContext = persistentContainer.viewContext
     
-    // static methods for Journals:
+    ///////////////////////////////////
+    // static methods for Journals: //
+    /////////////////////////////////
     static func newJournal() -> Journal {
         let journal = NSEntityDescription.insertNewObject(forEntityName: "Journal", into: managedContext) as! Journal
         return journal
@@ -47,7 +49,9 @@ class CoreDataHelper{
     }
     
     /*
-    // static methods for Exercises:
+     ////////////////////////////////////
+     // static methods for Exercises: //
+     //////////////////////////////////
     static func newExercise() -> Exercise {
         let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: managedContext) as! Exercise
         return exercise
@@ -66,6 +70,16 @@ class CoreDataHelper{
         saveExercise()
     }
     */
+    
+    ///////////////////////////////////////
+    // static methods for SelfHelpDays: //
+    /////////////////////////////////////
+    static func newSelfHelpDay() -> SelfHelpDay {
+        let selfHelpDay = NSEntityDescription.insertNewObject(forEntityName: "SelfHelpDay", into: managedContext) as! SelfHelpDay
+        return selfHelpDay
+    }
+    
+    
 }
 
 class selfHelpDay{

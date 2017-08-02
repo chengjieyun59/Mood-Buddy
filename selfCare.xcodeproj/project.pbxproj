@@ -33,6 +33,7 @@
 		5ABB0C801F310CB000FE6AD2 /* Relaxing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C7F1F310CB000FE6AD2 /* Relaxing.jpg */; };
 		5ABB0C831F310D9200FE6AD2 /* Meditation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */; };
 		5ABB0C841F310D9200FE6AD2 /* Birds Chirping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */; };
+		5ABB0C861F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */; };
 		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
 		5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19871F1ED70A00912B38 /* InitialView.swift */; };
 		5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC811F2133C4002CA10C /* JournalViewController.swift */; };
@@ -74,6 +75,7 @@
 		5ABB0C7F1F310CB000FE6AD2 /* Relaxing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Relaxing.jpg; sourceTree = "<group>"; };
 		5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Meditation.jpg; sourceTree = "<group>"; };
 		5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Birds Chirping.jpg"; sourceTree = "<group>"; };
+		5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
 		5ACF19871F1ED70A00912B38 /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		5AD4EC811F2133C4002CA10C /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				5AB7DF9E1F295EA500053670 /* ExerciseTableViewCell.swift */,
 				5AB7DFA81F2BE14200053670 /* MusicTableViewCell.swift */,
+				5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */,
 				5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */,
 				5AB7DFB31F2FA9C200053670 /* ResourceTableViewCell.swift */,
 			);
@@ -301,6 +304,7 @@
 				5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */,
 				5AD4EC901F215425002CA10C /* JournalHistoryViewController.swift in Sources */,
 				5AD4EC8A1F215331002CA10C /* CongratulationsViewController.swift in Sources */,
+				5ABB0C861F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift in Sources */,
 				5AB7DFA91F2BE14200053670 /* MusicTableViewCell.swift in Sources */,
 				5A37FEC51F19784E00CF9054 /* AppDelegate.swift in Sources */,
 			);

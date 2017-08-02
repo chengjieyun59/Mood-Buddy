@@ -10,16 +10,15 @@ import UIKit
 
 class DailyEndSurveyViewController: UIViewController {
 
-    // TODO: save feelingAfter & inputted timeSpent on self care
-    // if timeSpent == 0, don't save anything
-    
-    
-    @IBOutlet weak var feelingAfter: UISegmentedControl!
-    @IBOutlet weak var timeSpent: UITextField!
+    var selfHelpDay: SelfHelpDay?
+    // TODO: save inputted feelingAfter &  timeSpent on self care
+    var convertedFeelingAfter = 0
+    @IBOutlet weak var inputFeelingAfter: UISegmentedControl!
+    @IBOutlet weak var inputTimeSpent: UITextField!
     @IBAction func saveTheDay(_ sender: Any) {
         // TODO: save the day
+        convertedFeelingAfter = inputFeelingAfter.selectedSegmentIndex + 1 //segmentIndex starts at 0
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +37,16 @@ class DailyEndSurveyViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == ""{
+            let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay()
+
+            selfHelpDay.timeSpent = inputTimeSpent.text ?? ""
+            selfHelpDay.feelingAfter = String(convertedFeelingAfter) //convert int to string
+            selfHelpDay.selfHelpDate = Date() as NSDate
+        }
     }
     
 

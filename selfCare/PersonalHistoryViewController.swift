@@ -8,11 +8,21 @@
 
 import UIKit
 
-class PersonalHistoryViewController: UIViewController {
-
+class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var selfHelpDays = [SelfHelpDay](){
+        didSet{
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tabBarController?.tabBar.tintColor = UIColor.white
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -23,9 +33,26 @@ class PersonalHistoryViewController: UIViewController {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return selfHelpDays.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalHistoryTableViewCell", for: indexPath) as! PersonalHistoryTableViewCell
+        let row = indexPath.row
+        let selfHelpDay = selfHelpDays[row]
+
+        cell.selfHelpDateLabel.text = selfHelpDay.selfHelpDate?.convertToString()
+        cell.timeSpentLabel.text = selfHelpDay.timeSpent
+        // cell.selfCareMethodLabel.text =
+        // cell.feelingBeforeLabel = selfHelpDay.feelingBefore
+        // cell.feelingAfterLabel = selfHelpDay.feelingAfter
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 

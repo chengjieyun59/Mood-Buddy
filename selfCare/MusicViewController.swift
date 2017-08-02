@@ -91,7 +91,7 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DoneForTheDay"{
+        if segue.identifier == "DoneForTheDay", sound != nil {
             sound.stop()
         }
     }

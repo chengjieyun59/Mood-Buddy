@@ -11,7 +11,6 @@ import UIKit
 class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
-    
     var journals = [Journal](){
         didSet{
             tableView.reloadData()
