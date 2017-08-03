@@ -38,3 +38,12 @@ extension NSDate {
         // return DateFormatter.localizedString(from: (self as Date), dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)
     }
 } //Add extension to the pre-built NSDate function
+
+extension String {
+    var isNumeric: Bool {
+        guard self.characters.count > 0 else {return false}
+        guard self.characters.count < 4 else {return false} //the user can only input 0-999
+        let numSequence: Set<Character> = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        return Set(self.characters).isSubset(of: numSequence)
+    }
+} //Check if a string contains only numerical values, i.e. is a number

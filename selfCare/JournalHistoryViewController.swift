@@ -71,8 +71,20 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == .delete{
-            CoreDataHelper.delete(journal: journals.reversed()[indexPath.row])
-            journals = CoreDataHelper.retrieveJournals()
+            let alertController = UIAlertController(title: "Warning", message: "Do you really want to delete this journal entry?", preferredStyle: .alert)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler:{ Void in //.destructive shows in red
+                CoreDataHelper.delete(journal: self.journals.reversed()[indexPath.row])
+                self.journals = CoreDataHelper.retrieveJournals()
+            }) //only delete journal when user is sure
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler:{Void in
+                self.tableView.isEditing=false // swipe back the delete button
+            }) //journal entry not deleted
+            
+            alertController.addAction(deleteAction)
+            alertController.addAction(cancelAction)
+            self.present(alertController, animated: true, completion: nil)
         }
     }
 

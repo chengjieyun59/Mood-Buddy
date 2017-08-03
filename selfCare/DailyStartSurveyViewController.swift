@@ -67,11 +67,8 @@ class DailyStartSurveyViewController: UIViewController {
         let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay()
         selfHelpDay.feelingBefore = String(inputFeelingBefore.selectedSegmentIndex + 1)
         //+1 is because segment index starts at 0, then convert int to string
-        
-        if segue.identifier == "toMusic"{
-            selfHelpDay.methodUsed = "music"
-            CoreDataHelper.saveSelfHelpDay()
-        }
+        selfHelpDay.methodUsed = segue.identifier
+        print(selfHelpDay.methodUsed!)
     }
     
     /*

@@ -52,7 +52,7 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
 
         cell.selfHelpDateLabel.text = selfHelpDay.selfHelpDate?.convertToString()
         cell.timeSpentLabel.text = selfHelpDay.timeSpent
-        // cell.selfCareMethodLabel.text =
+        cell.selfCareMethodLabel.text = selfHelpDay.methodUsed
         cell.feelingBeforeLabel.text = selfHelpDay.feelingBefore
         cell.feelingAfterLabel.text = selfHelpDay.feelingAfter
         
