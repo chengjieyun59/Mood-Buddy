@@ -29,8 +29,8 @@ extension NSDate {
     func convertToString() -> String {
         let myFormatter = DateFormatter()
         myFormatter.locale = Locale(identifier: "en_US_POSIX")
-        myFormatter.dateFormat = "E MM/dd/yy', 'h:mm a"
-        // shows in the format of: Tue 07/25/17, 10:17 AM
+        myFormatter.dateFormat = "MMM d, ha" //Aug 03, 2PM
+        // "E MM/dd/yy', 'h:mm a" is in the format of: Tue 07/25/17, 10:17 AM
         
         let updatedString = myFormatter.string(from: self as Date)
         return updatedString
