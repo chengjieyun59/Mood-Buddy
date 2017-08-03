@@ -47,6 +47,12 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
                             "Little Planet.jpg",
                             "The Lounge.jpg",
                             "Relaxing.jpg"]
+        
+        let alertController = UIAlertController(title: "Warning", message: "Make sure your phone is NOT on silent mode. Tap on each row to listen to music 🎶. Tap again to stop.", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+        // Todo: show only twice
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

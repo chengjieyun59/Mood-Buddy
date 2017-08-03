@@ -21,6 +21,12 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         self.tabBarController?.tabBar.tintColor = UIColor.white
         
+        let alertController = UIAlertController(title: "Warning", message: "You can’t edit the journal, but you can swipe left to delete each journal", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+        // Todo: show only once
+        
         tableView.delegate = self
         tableView.dataSource = self
         journals = CoreDataHelper.retrieveJournals()
@@ -70,6 +76,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        
         if editingStyle == .delete{
             let alertController = UIAlertController(title: "Warning", message: "Do you really want to delete this journal entry?", preferredStyle: .alert)
             

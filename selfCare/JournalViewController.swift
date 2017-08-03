@@ -24,7 +24,7 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         journalTitle.text = journal?.title ?? ""
         journalContent.text = journal?.content ?? "" //displayed from core data
         
-        if (journalContent.isSelectable) {
+        if (journalContent.isEditable) {
             let alertController = UIAlertController(title: "Dismiss keyboard", message: "Tap outside the text boxes to dismiss keyboard.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
             alertController.addAction(okAction)
@@ -44,11 +44,19 @@ class JournalViewController: UIViewController, UITextViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SaveAndDoneForTheDay"{
-            let journal = self.journal ?? CoreDataHelper.newJournal()
-            journal.title = journalTitle.text ?? ""
-            journal.content = journalContent.text ?? ""
-            journal.modificationTime = Date() as NSDate
-            CoreDataHelper.saveJournal()
+            if (journalContent.text == "What happened today? How do you feel? Type it here.") || (journalTitle.text == "") {
+                let alertController = UIAlertController(title: "😏", message: "Type something, buddy!", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+            else {
+                let journal = self.journal ?? CoreDataHelper.newJournal()
+                journal.title = journalTitle.text ?? ""
+                journal.content = journalContent.text ?? ""
+                journal.modificationTime = Date() as NSDate
+                CoreDataHelper.saveJournal()
+            }
         }
     }
     

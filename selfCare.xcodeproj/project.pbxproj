@@ -12,6 +12,7 @@
 		5A37FECD1F19784E00CF9054 /* selfCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A37FECB1F19784E00CF9054 /* selfCare.xcdatamodeld */; };
 		5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A37FECE1F19784E00CF9054 /* Assets.xcassets */; };
 		5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A37FED01F19784E00CF9054 /* LaunchScreen.storyboard */; };
+		5A385A8C1F339E4A00723AEF /* Congrats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A8B1F339E4A00723AEF /* Congrats.jpg */; };
 		5AA166471F2179A100588B0F /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166461F2179A100588B0F /* CoreDataHelper.swift */; };
 		5AA166491F217DD200588B0F /* DateConvertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166481F217DD200588B0F /* DateConvertToString.swift */; };
 		5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */; };
@@ -54,6 +55,7 @@
 		5A37FECE1F19784E00CF9054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A37FED11F19784E00CF9054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A37FED31F19784E00CF9054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A385A8B1F339E4A00723AEF /* Congrats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Congrats.jpg; sourceTree = "<group>"; };
 		5AA166461F2179A100588B0F /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		5AA166481F217DD200588B0F /* DateConvertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvertToString.swift; sourceTree = "<group>"; };
 		5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHistoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5ABB0C721F30F43200FE6AD2 /* situp.jpg */,
+				5A385A8B1F339E4A00723AEF /* Congrats.jpg */,
 				5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */,
 				5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */,
 				5ABB0C771F310C9F00FE6AD2 /* Singing Bowl.jpg */,
@@ -267,6 +270,7 @@
 				5AB7DFC01F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 in Resources */,
 				5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */,
 				5ABB0C801F310CB000FE6AD2 /* Relaxing.jpg in Resources */,
+				5A385A8C1F339E4A00723AEF /* Congrats.jpg in Resources */,
 				5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */,
 				5AB7DFBE1F2FF54500053670 /* 10.00 Alexander- Meditation.mp3 in Resources */,
 				5ABB0C7E1F310C9F00FE6AD2 /* Little Planet.jpg in Resources */,
