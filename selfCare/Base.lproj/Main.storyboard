@@ -67,7 +67,7 @@
                                 <state key="normal" title="    Music 🎶"/>
                                 <connections>
                                     <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xj5-eG-rFi"/>
-                                    <segue destination="RYP-n2-TSt" kind="show" id="cKx-Qf-TtJ"/>
+                                    <segue destination="RYP-n2-TSt" kind="show" identifier="toMusic" id="cKx-Qf-TtJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-vF-yFS">
@@ -82,7 +82,7 @@
                                 <state key="normal" title="    Exercise 🏃"/>
                                 <connections>
                                     <action selector="exerciseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qs-2c-GLa"/>
-                                    <segue destination="YAT-j7-ABh" kind="show" id="Z8O-xi-Znj"/>
+                                    <segue destination="YAT-j7-ABh" kind="show" identifier="toExercise" id="Z8O-xi-Znj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to do today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-vy-a2P">
@@ -118,7 +118,7 @@
                                 <state key="normal" title="    Journal 🗒"/>
                                 <connections>
                                     <action selector="journalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cas-UU-9BS"/>
-                                    <segue destination="VFr-4p-db5" kind="show" id="6wK-xf-pog"/>
+                                    <segue destination="VFr-4p-db5" kind="show" identifier="toJournal" id="6wK-xf-pog"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhf-y4-0Lk">
@@ -161,7 +161,7 @@
                     <navigationItem key="navigationItem" title="Daily Start Survey ★☆☆" id="oUS-rK-58f"/>
                     <connections>
                         <outlet property="exercise" destination="QRi-vF-yFS" id="BtI-ey-VZL"/>
-                        <outlet property="feelingBefore" destination="Ze5-HO-KW9" id="xOk-SN-UO3"/>
+                        <outlet property="inputFeelingBefore" destination="Ze5-HO-KW9" id="Jtr-rx-C36"/>
                         <outlet property="journal" destination="h6s-nj-oIl" id="PD5-VI-Mmn"/>
                         <outlet property="music" destination="uMT-Ok-k4n" id="utp-TL-u6S"/>
                     </connections>
@@ -479,7 +479,7 @@
                                 <state key="normal" title="Save the day!"/>
                                 <connections>
                                     <action selector="saveTheDay:" destination="qmF-Sb-dlV" eventType="touchUpInside" id="nJW-NL-DsH"/>
-                                    <segue destination="X16-N1-alC" kind="show" identifier="Submit" id="EOf-uT-zB9"/>
+                                    <segue destination="X16-N1-alC" kind="show" identifier="Save the day" id="EOf-uT-zB9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="now?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkn-Zu-W0b">
@@ -712,7 +712,7 @@
                                 <rect key="frame" x="0.0" y="90" width="375" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="selfCareDayTableViewCell" rowHeight="60" id="tWZ-gZ-Y25" userLabel="PersonalHistoryTableViewCell" customClass="PersonalHistoryTableViewCell" customModule="selfCare" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalHistoryTableViewCell" rowHeight="60" id="tWZ-gZ-Y25" userLabel="PersonalHistoryTableViewCell" customClass="PersonalHistoryTableViewCell" customModule="selfCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tWZ-gZ-Y25" id="o2S-cg-qks">
@@ -955,7 +955,7 @@
         <image name="situp.jpg" width="560" height="560"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tcc-k5-fjy"/>
+        <segue reference="6wK-xf-pog"/>
         <segue reference="fYl-sw-Ffe"/>
     </inferredMetricsTieBreakers>
 </document>

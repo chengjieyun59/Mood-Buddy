@@ -11,13 +11,9 @@ import UIKit
 class DailyEndSurveyViewController: UIViewController {
 
     var selfHelpDay: SelfHelpDay?
-    // TODO: save inputted feelingAfter &  timeSpent on self care
-    var convertedFeelingAfter = 0
     @IBOutlet weak var inputFeelingAfter: UISegmentedControl!
     @IBOutlet weak var inputTimeSpent: UITextField!
     @IBAction func saveTheDay(_ sender: Any) {
-        // TODO: save the day
-        convertedFeelingAfter = inputFeelingAfter.selectedSegmentIndex + 1 //segmentIndex starts at 0
     }
     
     override func viewDidLoad() {
@@ -40,12 +36,14 @@ class DailyEndSurveyViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == ""{
+        if segue.identifier == "Save the day"{
             let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay()
 
             selfHelpDay.timeSpent = inputTimeSpent.text ?? ""
-            selfHelpDay.feelingAfter = String(convertedFeelingAfter) //convert int to string
+            selfHelpDay.feelingAfter = String(inputFeelingAfter.selectedSegmentIndex + 1)
+            //+1 is because segment index starts at 0, then convert int to string
             selfHelpDay.selfHelpDate = Date() as NSDate
+            CoreDataHelper.saveSelfHelpDay()
         }
     }
     

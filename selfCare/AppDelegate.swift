@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+// TODO: declare global variables here since it's to few to worth making a models folder. numberOfDays and numberOfDayStreak
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

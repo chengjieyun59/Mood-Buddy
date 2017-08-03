@@ -17,6 +17,11 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        selfHelpDays = CoreDataHelper.retrieveSelfHelpDay()
+    } //will show anytime it shows up at the front
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.tintColor = UIColor.white
@@ -48,8 +53,8 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
         cell.selfHelpDateLabel.text = selfHelpDay.selfHelpDate?.convertToString()
         cell.timeSpentLabel.text = selfHelpDay.timeSpent
         // cell.selfCareMethodLabel.text =
-        // cell.feelingBeforeLabel = selfHelpDay.feelingBefore
-        // cell.feelingAfterLabel = selfHelpDay.feelingAfter
+        cell.feelingBeforeLabel.text = selfHelpDay.feelingBefore
+        cell.feelingAfterLabel.text = selfHelpDay.feelingAfter
         
         return cell
     }

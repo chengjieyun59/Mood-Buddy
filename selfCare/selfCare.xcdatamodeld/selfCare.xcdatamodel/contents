@@ -11,12 +11,13 @@
     <entity name="SelfHelpDay" representedClassName="SelfHelpDay" syncable="YES" codeGenerationType="class">
         <attribute name="feelingAfter" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="feelingBefore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="methodUsed" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="selfHelpDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="timeSpent" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Exercise" positionX="-54" positionY="18" width="128" height="60"/>
         <element name="Journal" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="SelfHelpDay" positionX="-36" positionY="27" width="128" height="105"/>
+        <element name="SelfHelpDay" positionX="-36" positionY="27" width="128" height="120"/>
     </elements>
 </model>

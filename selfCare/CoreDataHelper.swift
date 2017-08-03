@@ -79,9 +79,28 @@ class CoreDataHelper{
         return selfHelpDay
     }
     
+    static func saveSelfHelpDay(){
+        do {
+            try managedContext.save()
+        } catch let error as NSError{
+            print("Saving failed \(error)")
+        }
+    }
+    
+    static func retrieveSelfHelpDay() -> [SelfHelpDay]{
+        let fetchRequest = NSFetchRequest<SelfHelpDay>(entityName: "SelfHelpDay")
+        do{
+            let results = try managedContext.fetch(fetchRequest)
+            return results
+        } catch let error as NSError{
+            print("Fetching failed \(error)")
+        }
+        return []
+    }
     
 }
 
+/*
 class selfHelpDay{
     // TODO: display 4 columns of saved data: date, selection, feelingBefore, feelingAfter
 
@@ -102,6 +121,6 @@ class selfHelpDay{
     
 }
 
-
+*/
 
 

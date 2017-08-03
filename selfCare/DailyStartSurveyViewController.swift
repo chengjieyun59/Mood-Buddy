@@ -9,11 +9,12 @@
 import UIKit
 
 class DailyStartSurveyViewController: UIViewController {
-    // TODO: don't use 2 buttons when you can use one. Take away the startDay button.
     // TODO: keep the selectionType and store it and display in personalHistory view controller
     
+    var selfHelpDay: SelfHelpDay?
+
     // outlets below
-    @IBOutlet weak var feelingBefore: UISegmentedControl!
+    @IBOutlet weak var inputFeelingBefore: UISegmentedControl!
 
     @IBOutlet weak var music: UIButton!
     @IBOutlet weak var exercise: UIButton!
@@ -62,7 +63,17 @@ class DailyStartSurveyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay()
+        selfHelpDay.feelingBefore = String(inputFeelingBefore.selectedSegmentIndex + 1)
+        //+1 is because segment index starts at 0, then convert int to string
+        
+        if segue.identifier == "toMusic"{
+            selfHelpDay.methodUsed = "music"
+            CoreDataHelper.saveSelfHelpDay()
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
