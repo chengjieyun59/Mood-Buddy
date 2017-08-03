@@ -11,6 +11,7 @@ import UIKit
 class JournalViewController: UIViewController, UITextViewDelegate {
     var shouldEnableUserInteraction: Bool = true
     var journal: Journal?
+    var selfHelpDay: SelfHelpDay?
     let color = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0).cgColor //same light gray color as the textfield border
     let sameColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0) //sameColor is UIColor, while color is CGColor
     
@@ -56,6 +57,8 @@ class JournalViewController: UIViewController, UITextViewDelegate {
                 journal.content = journalContent.text ?? ""
                 journal.modificationTime = Date() as NSDate
                 CoreDataHelper.saveJournal()
+                let destination = segue.destination as! DailyEndSurveyViewController
+                destination.selfHelpDay = selfHelpDay
             }
         }
     }
@@ -82,7 +85,7 @@ class JournalViewController: UIViewController, UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) { // when the user starts editting,
         if journalContent.textColor == sameColor {
             journalContent.text = nil // the placeholder text should disappear,
-            journalContent.textColor = UIColor.black // and user input should be in black
+            journalContent.textColor = UIColor(red: 86/255, green: 62/255, blue: 44/255, alpha: 1.0) // and user input should change from light gray to brown
         }
     }
     
@@ -104,16 +107,4 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

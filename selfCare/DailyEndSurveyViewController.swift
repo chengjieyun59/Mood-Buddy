@@ -46,7 +46,7 @@ class DailyEndSurveyViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Save the day"{
-            let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay() //TODO: this line should be changed
+            guard let selfHelpDay = self.selfHelpDay else {return} //?? CoreDataHelper.newSelfHelpDay() //TODO: this line should be changed
 
             if !(inputTimeSpent.text?.isNumeric)! {
                 let alertController = UIAlertController(title: "I see what you did there 😏", message: "Please input a reasonable integer for your time spent on self care.", preferredStyle: .alert)

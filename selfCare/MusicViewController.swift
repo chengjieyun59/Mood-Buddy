@@ -20,6 +20,7 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
                   "6.36 Bensound- Little Planet",
                   "4.16 Bensound- The Lounge",
                   "4.48 Bensound- Relaxing",]
+    var selfHelpDay: SelfHelpDay?
     
     // var image1 : UIImage = UIImage(named: "rock")!
     var musicImages : [String]!
@@ -100,6 +101,8 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if segue.identifier == "DoneForTheDay", sound != nil {
             sound.stop()
         }
+        let destination = segue.destination as! DailyEndSurveyViewController
+        destination.selfHelpDay = selfHelpDay
     }
 
     
