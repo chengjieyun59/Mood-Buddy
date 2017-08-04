@@ -98,29 +98,9 @@ class CoreDataHelper{
         return []
     }
     
-}
-
-/*
-class selfHelpDay{
-    // TODO: display 4 columns of saved data: date, selection, feelingBefore, feelingAfter
-
-    // let feelingBefore
-    // let feelingAfter
-
-    // let selection: String = ""
-    
-    // switch selectionType{
-    // case 1:
-    // selection = "music"
-    // case 2:
-    // selection = "exercise"
-    // case 3:
-    // selection = "journal"
-    // }
-    
+    static func delete(selfHelpDay: SelfHelpDay){
+        managedContext.delete(selfHelpDay)
+        saveSelfHelpDay()
+    }
     
 }
-
-*/
-
-

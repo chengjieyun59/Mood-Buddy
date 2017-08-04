@@ -20,16 +20,19 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         selfHelpDays = CoreDataHelper.retrieveSelfHelpDay()
+        if selfHelpDays.count > 0 {
+            tableView.scrollToRow(at: IndexPath(item:selfHelpDays.count-1, section: 0), at: .bottom, animated: true)
+        } // scroll to the very bottom for most recent day
     } //will show anytime it shows up at the front
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.tintColor = UIColor.white
-        
+
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
-    }
+        
+    } // Do any additional setup after loading the view.
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

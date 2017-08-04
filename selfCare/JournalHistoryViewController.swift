@@ -21,11 +21,13 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         self.tabBarController?.tabBar.tintColor = UIColor.white
         
-        let alertController = UIAlertController(title: "Warning", message: "You can’t edit the journal, but you can swipe left to delete each journal", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
-        // Todo: show only once
+        if tutorialHasBeenDisplayed1 == false, journals.count == 1{
+            tutorialHasBeenDisplayed1 = true
+            let alertController = UIAlertController(title: "Warning", message: "You can’t edit the journal, but you can swipe left to delete each journal", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }// show only once when there's one journal entry that users can try on
         
         tableView.delegate = self
         tableView.dataSource = self

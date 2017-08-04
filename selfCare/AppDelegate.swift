@@ -10,6 +10,10 @@ import UIKit
 import CoreData
 
 // TODO: declare global variables here since it's to few to worth making a models folder. numberOfDays and numberOfDayStreak
+var tutorialHasBeenDisplayed1 = false
+var tutorialHasBeenDisplayed2 = false
+var tutorialHasBeenDisplayed3 = false
+var tutorialHasBeenDisplayed4 = false
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

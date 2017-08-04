@@ -25,14 +25,15 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         journalTitle.text = journal?.title ?? ""
         journalContent.text = journal?.content ?? "" //displayed from core data
         
-        if (journalContent.isEditable) {
+        if tutorialHasBeenDisplayed2 == false, shouldEnableUserInteraction == true { // Show this once only in journal, but not shown in journal history
+            tutorialHasBeenDisplayed2 = true
             let alertController = UIAlertController(title: "Dismiss keyboard", message: "Tap outside the text boxes to dismiss keyboard.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
-        } //Todo: show this once only
+        }
         
-        if shouldEnableUserInteraction == true { //meaning this is the first time typing in this journal entry
+        if shouldEnableUserInteraction == true { //meaning this is the first time typing in this journal entry, i.e. not called from journal history
             journalContent.delegate = self //textVdiew delegate
             journalContent.text = "What happened today? How do you feel? Type it here." //have a placeholder text
             journalContent.textColor = sameColor //make the placeholder text light gray

@@ -49,11 +49,21 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
                             "The Lounge.jpg",
                             "Relaxing.jpg"]
         
-        let alertController = UIAlertController(title: "Warning", message: "Make sure your phone is NOT on silent mode. Tap on each row to listen to music 🎶. Tap again to stop.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
-        // Todo: show only twice
+        if tutorialHasBeenDisplayed3 == false {
+            tutorialHasBeenDisplayed3 = true
+            let alertController = UIAlertController(title: "Warning", message: "Make sure your phone is NOT on silent mode. Tap on each row to listen to music 🎶. Tap again to stop.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        } // Show only once, first time
+        
+        if tutorialHasBeenDisplayed3 == true, tutorialHasBeenDisplayed4 == false {
+            tutorialHasBeenDisplayed4 = true
+            let alertController = UIAlertController(title: "Reminder", message: "Make sure your phone is NOT on silent mode, but ringing mode 🎶", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        } // Show only once, second time
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,9 +81,13 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isMovingFromParentViewController{
+            // print("back button pressed")
+            // CoreDataHelper.delete(selfHelpDay: SelfHelpDay[selfHelpDay.count-1]) //delete the last one
+            // self.selfHelpDay = CoreDataHelper.retrieveSelfHelpDay()
+        }
     }
     
     // tap cell to play
