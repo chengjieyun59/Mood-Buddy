@@ -13,18 +13,10 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     let resources = ["1. National Suicide Hotline", "2. Depression Hotline", "3. Support for Sexual Assault Survivors", "4. Support for LGBTQIA", "5. 30 Day Meditation Challenge", "6. 30 Day Life-Changing Challenges", "7. Improve Relationships with Others", "8. Improve Quality of Life", "*** Credits/ Description"]
 
-    /*
-    func openURL() {
-        if #available(iOS 10.0, *){
-            UIApplication.shared.open(url1, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url1)
-        }
-    }
-    */
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.tintColor = UIColor.white
+
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -41,16 +33,8 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.resourceLabel.text = resource
         return cell
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        self.tabBarController?.tabBar.tintColor = UIColor.white
-        // Dispose of any resources that can be recreated.
-    }
-    
-    // tap cell to open respective URLs in Safari
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // openURL()
         let url : NSURL?
         switch indexPath.row{
         case 0:
@@ -75,19 +59,7 @@ class ResourcesViewController: UIViewController, UITableViewDelegate, UITableVie
             return;
         }
         if url != nil{
-            // UIApplication.shared.openURL(url! as URL)
-            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil) // openURL()
         }
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    } // tap cell to open respective URLs in Safari
 }

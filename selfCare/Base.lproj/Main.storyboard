@@ -71,7 +71,6 @@
                                     <color key="titleColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xj5-eG-rFi"/>
                                     <segue destination="RYP-n2-TSt" kind="show" identifier="Music" id="cKx-Qf-TtJ"/>
                                 </connections>
                             </button>
@@ -88,7 +87,6 @@
                                     <color key="titleColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="exerciseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qs-2c-GLa"/>
                                     <segue destination="YAT-j7-ABh" kind="show" identifier="Exercise" id="Z8O-xi-Znj"/>
                                 </connections>
                             </button>
@@ -127,7 +125,6 @@
                                     <color key="titleColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="journalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cas-UU-9BS"/>
                                     <segue destination="VFr-4p-db5" kind="show" identifier="Journal" id="6wK-xf-pog"/>
                                 </connections>
                             </button>

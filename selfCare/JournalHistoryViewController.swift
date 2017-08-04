@@ -27,22 +27,16 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
-        }// show only once when there's one journal entry that users can try on
+        }// show only once and when there's one journal entry that users can try deleting
         
         tableView.delegate = self
         tableView.dataSource = self
         journals = CoreDataHelper.retrieveJournals()
-        // Do any additional setup after loading the view.
     } // this gets called every time right after the view loads
     
     override func viewWillAppear(_ animated: Bool) {
         journals = CoreDataHelper.retrieveJournals()
     } // this gets called every time the user switch tab
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return journals.count
@@ -50,10 +44,6 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "JournayHistoryTableViewCell", for: indexPath) as! JournalHistoryTableViewCell
-        
-        //let reversedRow = journals.count - indexPath.row - 1
-        //let journal = journals[reversedRow]
-        //the 2 lines above is equivalent to the 2 lines below
         let row = indexPath.row
         let journal = journals.reversed()[row] //reverse journal order so the last one is on top
         
@@ -88,7 +78,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
             }) //only delete journal when user is sure
             
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler:{Void in
-                self.tableView.isEditing=false // swipe back the delete button
+                self.tableView.isEditing = false // automatically swipe back the delete button
             }) //journal entry not deleted
             
             alertController.addAction(deleteAction)
@@ -96,15 +86,4 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
             self.present(alertController, animated: true, completion: nil)
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

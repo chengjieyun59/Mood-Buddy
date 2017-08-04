@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-// TODO: declare global variables here since it's to few to worth making a models folder. numberOfDays and numberOfDayStreak
+// TODO: declare global variables here: numberOfDays and numberOfDayStreak
 var tutorialHasBeenDisplayed1 = false
 var tutorialHasBeenDisplayed2 = false
 var tutorialHasBeenDisplayed3 = false
@@ -21,13 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         // UINavigationBar.appearance().barStyle = .default // change status battery bar color
         UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 215/255, blue: 227/255, alpha: 1) // change RGB color to 101, 214, 227
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UINavigationBar.appearance().tintColor = .white
-        // Override point for customization after application launch.
+        
         return true
-    }
+    } // Override point for customization after application launch.
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -97,6 +98,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 

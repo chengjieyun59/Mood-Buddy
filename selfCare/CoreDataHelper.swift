@@ -96,10 +96,4 @@ class CoreDataHelper{
         }
         return []
     }
-    
-    static func delete(selfHelpDay: SelfHelpDay){
-        managedContext.delete(selfHelpDay)
-        saveSelfHelpDay()
-    }
-    
 }

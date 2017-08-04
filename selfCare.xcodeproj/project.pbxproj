@@ -42,7 +42,6 @@
 		5ABB0C841F310D9200FE6AD2 /* Birds Chirping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */; };
 		5ABB0C861F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */; };
 		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
-		5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19871F1ED70A00912B38 /* InitialView.swift */; };
 		5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC811F2133C4002CA10C /* JournalViewController.swift */; };
 		5AD4EC841F2133D2002CA10C /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */; };
 		5AD4EC861F2133DE002CA10C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC851F2133DE002CA10C /* MusicViewController.swift */; };
@@ -91,7 +90,6 @@
 		5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Birds Chirping.jpg"; sourceTree = "<group>"; };
 		5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
-		5ACF19871F1ED70A00912B38 /* InitialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		5AD4EC811F2133C4002CA10C /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		5AD4EC851F2133DE002CA10C /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +137,8 @@
 				5AB7DFA31F295EE500053670 /* Views */,
 				5ACF19831F1D865900912B38 /* Controllers */,
 				5ACF19841F1D866E00912B38 /* Storyboards */,
+				5ABB0C761F310C6900FE6AD2 /* Images */,
+				5AB7DFB01F2C0AA500053670 /* Music audio files */,
 				5A37FECE1F19784E00CF9054 /* Assets.xcassets */,
 				5A37FED31F19784E00CF9054 /* Info.plist */,
 				5A37FECB1F19784E00CF9054 /* selfCare.xcdatamodeld */,
@@ -152,6 +152,33 @@
 				5A67B7881F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		5A67B78B1F3519C5001007B4 /* Background images */ = {
+			isa = PBXGroup;
+			children = (
+				5A385A8F1F33A45F00723AEF /* 0jacalyn-beales-311854.jpg */,
+				5A67B7761F33DF5F001007B4 /* 1louis-smith-78595.jpg */,
+				5A67B77E1F33E6A6001007B4 /* 2clique-images-315489.jpg */,
+				5A67B7841F33EE82001007B4 /* 3melinda-pack-233281.jpg */,
+				5A385A8D1F33A45900723AEF /* 4jakub-kriz-113718.jpg */,
+				5A385A911F33AB6500723AEF /* 5ian-schneider-108618.jpg */,
+			);
+			name = "Background images";
+			sourceTree = "<group>";
+		};
+		5A67B78C1F3519E1001007B4 /* Music cell images */ = {
+			isa = PBXGroup;
+			children = (
+				5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */,
+				5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */,
+				5ABB0C771F310C9F00FE6AD2 /* Singing Bowl.jpg */,
+				5ABB0C781F310C9F00FE6AD2 /* Better Days.jpg */,
+				5ABB0C7A1F310C9F00FE6AD2 /* Little Planet.jpg */,
+				5ABB0C791F310C9F00FE6AD2 /* The Lounge.jpg */,
+				5ABB0C7F1F310CB000FE6AD2 /* Relaxing.jpg */,
+			);
+			name = "Music cell images";
 			sourceTree = "<group>";
 		};
 		5AB7DFA31F295EE500053670 /* Views */ = {
@@ -180,34 +207,20 @@
 			name = "Music audio files";
 			sourceTree = "<group>";
 		};
-		5ABB0C761F310C6900FE6AD2 /* Music & exercise image files */ = {
+		5ABB0C761F310C6900FE6AD2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				5A67B7861F34F405001007B4 /* appIconLarge.png */,
-				5A385A8F1F33A45F00723AEF /* 0jacalyn-beales-311854.jpg */,
-				5A67B7761F33DF5F001007B4 /* 1louis-smith-78595.jpg */,
-				5A67B77E1F33E6A6001007B4 /* 2clique-images-315489.jpg */,
-				5A67B7841F33EE82001007B4 /* 3melinda-pack-233281.jpg */,
-				5A385A8D1F33A45900723AEF /* 4jakub-kriz-113718.jpg */,
-				5A385A911F33AB6500723AEF /* 5ian-schneider-108618.jpg */,
-				5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */,
-				5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */,
-				5ABB0C771F310C9F00FE6AD2 /* Singing Bowl.jpg */,
-				5ABB0C781F310C9F00FE6AD2 /* Better Days.jpg */,
-				5ABB0C7A1F310C9F00FE6AD2 /* Little Planet.jpg */,
-				5ABB0C791F310C9F00FE6AD2 /* The Lounge.jpg */,
-				5ABB0C7F1F310CB000FE6AD2 /* Relaxing.jpg */,
+				5A67B78B1F3519C5001007B4 /* Background images */,
+				5A67B78C1F3519E1001007B4 /* Music cell images */,
 			);
-			name = "Music & exercise image files";
+			name = Images;
 			sourceTree = "<group>";
 		};
 		5ACF19831F1D865900912B38 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5ACF19871F1ED70A00912B38 /* InitialView.swift */,
 				5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */,
-				5ABB0C761F310C6900FE6AD2 /* Music & exercise image files */,
-				5AB7DFB01F2C0AA500053670 /* Music audio files */,
 				5AD4EC851F2133DE002CA10C /* MusicViewController.swift */,
 				5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */,
 				5AD4EC811F2133C4002CA10C /* JournalViewController.swift */,
@@ -334,7 +347,6 @@
 				5AD4EC8E1F215400002CA10C /* PersonalHistoryViewController.swift in Sources */,
 				5AB7DFB41F2FA9C200053670 /* ResourceTableViewCell.swift in Sources */,
 				5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */,
-				5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */,
 				5AA166471F2179A100588B0F /* CoreDataHelper.swift in Sources */,
 				5A67B7891F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift in Sources */,
 				5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */,

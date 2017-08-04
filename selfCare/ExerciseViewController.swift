@@ -47,30 +47,13 @@ class ExerciseViewController: UIViewController, UITableViewDelegate, UITableView
         cell.exerciseLabel.text = exercise
         return cell
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    /*
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == .delete{
             exercises.remove(at: indexPath.row) //delete button is shown when user swipes left
             tableView.deleteRows(at: [indexPath], with: .fade) //does the action of deleting from the tableView
         }
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if isMovingFromParentViewController{
-            print("back button pressed")
-            // CoreDataHelper.delete(selfHelpDay: SelfHelpDay[selfHelpDay.count-1]) //delete the last one
-            // self.selfHelpDay = CoreDataHelper.retrieveSelfHelpDay()
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
+    } // delete that exercise
+    */
 }

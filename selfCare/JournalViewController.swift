@@ -12,7 +12,7 @@ class JournalViewController: UIViewController, UITextViewDelegate {
     var shouldEnableUserInteraction: Bool = true
     var journal: Journal?
     var selfHelpDay: SelfHelpDay?
-    let color = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0).cgColor //same light gray color as the textfield border
+    let sameGreyColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0).cgColor //same light gray color as the textfield border
     let sameColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0) //sameColor is UIColor, while color is CGColor
     
     @IBOutlet weak var journalTitle: UITextField!
@@ -25,23 +25,24 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         journalTitle.text = journal?.title ?? ""
         journalContent.text = journal?.content ?? "" //displayed from core data
         
-        if tutorialHasBeenDisplayed2 == false, shouldEnableUserInteraction == true { // Show this once only in journal, but not shown in journal history
+        if tutorialHasBeenDisplayed2 == false, shouldEnableUserInteraction == true {
             tutorialHasBeenDisplayed2 = true
             let alertController = UIAlertController(title: "Dismiss keyboard", message: "Tap outside the text boxes to dismiss keyboard.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
-        }
+        } // Show this once only in journal, but not shown in journal history
         
-        if shouldEnableUserInteraction == true { //meaning this is the first time typing in this journal entry, i.e. not called from journal history
-            journalContent.delegate = self //textVdiew delegate
+        if shouldEnableUserInteraction == true {
+            journalContent.delegate = self //textView delegate
             journalContent.text = "What happened today? How do you feel? Type it here." //have a placeholder text
             journalContent.textColor = sameColor //make the placeholder text light gray
-        }
+        }// meaning this is the first time user types in this journal entry. i.e. not called from journal history
         
-        journalContent.layer.borderColor = color //defined above viewWillAppear function
+        journalContent.layer.borderColor = sameGreyColor
         journalContent.layer.borderWidth = 0.6
-        journalContent.layer.cornerRadius = 5 //these 3 lines add a thin gray border for the text view, so that it matches with the text field above it
+        journalContent.layer.cornerRadius = 5
+        //these 3 lines add a thin gray border for the text view, so that it matches with the text field above it
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,6 +53,7 @@ class JournalViewController: UIViewController, UITextViewDelegate {
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
             }
+                
             else {
                 let journal = self.journal ?? CoreDataHelper.newJournal()
                 journal.title = journalTitle.text ?? ""
@@ -81,38 +83,21 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         }
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) { // when the user starts editting,
+    func textViewDidBeginEditing(_ textView: UITextView) {
         if journalContent.textColor == sameColor {
             journalContent.text = nil // the placeholder text should disappear,
             journalContent.textColor = UIColor(red: 86/255, green: 62/255, blue: 44/255, alpha: 1.0) // and user input should change from light gray to brown
         }
-    }
+    } // when the user starts editting
     
-    // if the text view is still empty after the user finish editting, then put back the light grey placeholder
     func textViewDidEndEditing(_ textView: UITextView) {
         if journalContent.text.isEmpty {
             journalContent.text = "What happened today? How do you feel? Type it here."
             journalContent.textColor = sameColor
         }
-    }
+    } // if the text view is still empty after the user finish editting, then put back the light grey placeholder
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if isMovingFromParentViewController{
-            print("back button pressed")
-            // CoreDataHelper.delete(selfHelpDay: SelfHelpDay[selfHelpDay.count-1]) //delete the last one
-            // self.selfHelpDay = CoreDataHelper.retrieveSelfHelpDay()
-        }
-    }
-    
-    //Calls this function when the tap is recognized outside text field, text view, and back button
     func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    } //Calls this function when the tap is recognized outside text field, text view, and back button
 }
