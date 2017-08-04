@@ -21,8 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathe in  deeply" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrV-0p-EA1">
-                                <rect key="frame" x="0.0" y="252" width="320" height="65"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIconLarge.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ay5-8L-NHB">
+                                <rect key="frame" x="40" y="237" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Tu0-L9-cXh"/>
+                                    <constraint firstAttribute="height" constant="240" id="bSb-qk-I8o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breathe in deeply" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrV-0p-EA1">
+                                <rect key="frame" x="0.0" y="134" width="320" height="65"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,8 +38,10 @@
                         <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="WrV-0p-EA1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4Sx-wO-Dh0"/>
+                            <constraint firstItem="Ay5-8L-NHB" firstAttribute="top" secondItem="WrV-0p-EA1" secondAttribute="bottom" constant="38" id="WTB-6C-fvj"/>
                             <constraint firstItem="WrV-0p-EA1" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="Yh6-RA-Qwq"/>
+                            <constraint firstItem="WrV-0p-EA1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="114" id="ggc-J6-Bkz"/>
+                            <constraint firstItem="Ay5-8L-NHB" firstAttribute="centerX" secondItem="WrV-0p-EA1" secondAttribute="centerX" id="qyf-LG-ASU"/>
                             <constraint firstItem="WrV-0p-EA1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xSZ-9b-qBd"/>
                         </constraints>
                     </view>
@@ -42,4 +51,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appIconLarge.png" width="1004" height="1004"/>
+    </resources>
 </document>

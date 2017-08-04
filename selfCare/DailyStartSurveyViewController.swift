@@ -55,8 +55,7 @@ class DailyStartSurveyViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController!.navigationBar.isTranslucent = false
         self.tabBarController?.tabBar.tintColor = UIColor.white
-        // Do any additional setup after loading the view.
-    }
+    }// Do any additional setup after loading the view.
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -64,11 +63,16 @@ class DailyStartSurveyViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay()
-        selfHelpDay.feelingBefore = String(inputFeelingBefore.selectedSegmentIndex + 1)
-        //+1 is because segment index starts at 0, then convert int to string
-        selfHelpDay.methodUsed = segue.identifier
         
+        SingletonTemporarySelfHelpDay.shared.feelingBefore = String(inputFeelingBefore.selectedSegmentIndex + 1)
+        SingletonTemporarySelfHelpDay.shared.methodUsed = segue.identifier!
+        
+        //let selfHelpDay = self.selfHelpDay ?? CoreDataHelper.newSelfHelpDay()
+        //selfHelpDay.feelingBefore = String(inputFeelingBefore.selectedSegmentIndex + 1)
+        // +1 is because segment index starts at 0, then convert int to string
+        //selfHelpDay.methodUsed = segue.identifier
+        
+        /*
         switch segue.identifier! {
         case "Music":
             let destination = segue.destination as! MusicViewController
@@ -82,6 +86,7 @@ class DailyStartSurveyViewController: UIViewController {
         default:
             return
         }
+        */
     }
     
     /*

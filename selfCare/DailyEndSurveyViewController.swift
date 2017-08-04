@@ -10,11 +10,8 @@ import UIKit
 
 class DailyEndSurveyViewController: UIViewController {
 
-    var selfHelpDay: SelfHelpDay?
     @IBOutlet weak var inputFeelingAfter: UISegmentedControl!
     @IBOutlet weak var inputTimeSpent: UITextField!
-    @IBAction func saveTheDay(_ sender: Any) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +38,9 @@ class DailyEndSurveyViewController: UIViewController {
         let numberFiltered = compSepByCharInSet.joined(separator: "")
         return string == numberFiltered
     }
-    
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Save the day"{
-            guard let selfHelpDay = self.selfHelpDay else {return} //?? CoreDataHelper.newSelfHelpDay() //TODO: this line should be changed
-
             if !(inputTimeSpent.text?.isNumeric)! {
                 let alertController = UIAlertController(title: "I see what you did there 😏", message: "Please input a reasonable integer for your time spent on self care.", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
@@ -56,11 +49,15 @@ class DailyEndSurveyViewController: UIViewController {
                 print("User inputted a non-integer")
             } // check if user actually inputted an integer number
             else {
+                let selfHelpDay = CoreDataHelper.newSelfHelpDay()
+                selfHelpDay.feelingBefore = SingletonTemporarySelfHelpDay.shared.feelingBefore
+                selfHelpDay.methodUsed = SingletonTemporarySelfHelpDay.shared.methodUsed
                 selfHelpDay.timeSpent = inputTimeSpent.text ?? ""
                 selfHelpDay.feelingAfter = String(inputFeelingAfter.selectedSegmentIndex + 1)
                 //+1 is because segment index starts at 0, then convert int to string
                 selfHelpDay.selfHelpDate = Date() as NSDate
                 CoreDataHelper.saveSelfHelpDay()
+                SingletonTemporarySelfHelpDay.shared.resetData() //just to be safe, though users already override the 2 variables in the beginning
             } // only save if timeSpent is a number
         }
     }

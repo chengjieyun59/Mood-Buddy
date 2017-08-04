@@ -12,14 +12,14 @@
 		5A37FECD1F19784E00CF9054 /* selfCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A37FECB1F19784E00CF9054 /* selfCare.xcdatamodeld */; };
 		5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A37FECE1F19784E00CF9054 /* Assets.xcassets */; };
 		5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A37FED01F19784E00CF9054 /* LaunchScreen.storyboard */; };
-		5A385A8E1F33A45900723AEF /* jakub-kriz-113718.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A8D1F33A45900723AEF /* jakub-kriz-113718.jpg */; };
-		5A385A901F33A45F00723AEF /* jacalyn-beales-311854.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A8F1F33A45F00723AEF /* jacalyn-beales-311854.jpg */; };
-		5A385A921F33AB6500723AEF /* ian-schneider-108618.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A911F33AB6500723AEF /* ian-schneider-108618.jpg */; };
-		5A385A941F33B06E00723AEF /* 3dariusz-sankowski-56727.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A931F33B06E00723AEF /* 3dariusz-sankowski-56727.jpg */; };
-		5A385A981F33B08600723AEF /* 3melinda-pack-233281.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A971F33B08600723AEF /* 3melinda-pack-233281.jpg */; };
+		5A385A8E1F33A45900723AEF /* 4jakub-kriz-113718.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A8D1F33A45900723AEF /* 4jakub-kriz-113718.jpg */; };
+		5A385A901F33A45F00723AEF /* 0jacalyn-beales-311854.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A8F1F33A45F00723AEF /* 0jacalyn-beales-311854.jpg */; };
+		5A385A921F33AB6500723AEF /* 5ian-schneider-108618.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A385A911F33AB6500723AEF /* 5ian-schneider-108618.jpg */; };
 		5A67B7771F33DF5F001007B4 /* 1louis-smith-78595.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B7761F33DF5F001007B4 /* 1louis-smith-78595.jpg */; };
 		5A67B77F1F33E6A6001007B4 /* 2clique-images-315489.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B77E1F33E6A6001007B4 /* 2clique-images-315489.jpg */; };
-		5A67B7851F33EE82001007B4 /* melinda-pack-233281.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B7841F33EE82001007B4 /* melinda-pack-233281.jpg */; };
+		5A67B7851F33EE82001007B4 /* 3melinda-pack-233281.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B7841F33EE82001007B4 /* 3melinda-pack-233281.jpg */; };
+		5A67B7871F34F405001007B4 /* appIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A67B7861F34F405001007B4 /* appIconLarge.png */; };
+		5A67B7891F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A67B7881F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift */; };
 		5AA166471F2179A100588B0F /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166461F2179A100588B0F /* CoreDataHelper.swift */; };
 		5AA166491F217DD200588B0F /* DateConvertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA166481F217DD200588B0F /* DateConvertToString.swift */; };
 		5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */; };
@@ -33,7 +33,6 @@
 		5ABB0C6B1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C6A1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 */; };
 		5ABB0C6D1F2FFD5700FE6AD2 /* 3.48 Alexander- Birds Chirping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C6C1F2FFD5700FE6AD2 /* 3.48 Alexander- Birds Chirping.mp3 */; };
 		5ABB0C6F1F2FFD6100FE6AD2 /* 5.33 Alexander- Singing Bowl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C6E1F2FFD6100FE6AD2 /* 5.33 Alexander- Singing Bowl.mp3 */; };
-		5ABB0C731F30F43200FE6AD2 /* situp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C721F30F43200FE6AD2 /* situp.jpg */; };
 		5ABB0C7B1F310C9F00FE6AD2 /* Singing Bowl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C771F310C9F00FE6AD2 /* Singing Bowl.jpg */; };
 		5ABB0C7C1F310C9F00FE6AD2 /* Better Days.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C781F310C9F00FE6AD2 /* Better Days.jpg */; };
 		5ABB0C7D1F310C9F00FE6AD2 /* The Lounge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C791F310C9F00FE6AD2 /* The Lounge.jpg */; };
@@ -62,14 +61,14 @@
 		5A37FECE1F19784E00CF9054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A37FED11F19784E00CF9054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A37FED31F19784E00CF9054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A385A8D1F33A45900723AEF /* jakub-kriz-113718.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jakub-kriz-113718.jpg"; sourceTree = "<group>"; };
-		5A385A8F1F33A45F00723AEF /* jacalyn-beales-311854.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jacalyn-beales-311854.jpg"; sourceTree = "<group>"; };
-		5A385A911F33AB6500723AEF /* ian-schneider-108618.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ian-schneider-108618.jpg"; sourceTree = "<group>"; };
-		5A385A931F33B06E00723AEF /* 3dariusz-sankowski-56727.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3dariusz-sankowski-56727.jpg"; sourceTree = "<group>"; };
-		5A385A971F33B08600723AEF /* 3melinda-pack-233281.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3melinda-pack-233281.jpg"; sourceTree = "<group>"; };
+		5A385A8D1F33A45900723AEF /* 4jakub-kriz-113718.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4jakub-kriz-113718.jpg"; sourceTree = "<group>"; };
+		5A385A8F1F33A45F00723AEF /* 0jacalyn-beales-311854.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0jacalyn-beales-311854.jpg"; sourceTree = "<group>"; };
+		5A385A911F33AB6500723AEF /* 5ian-schneider-108618.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5ian-schneider-108618.jpg"; sourceTree = "<group>"; };
 		5A67B7761F33DF5F001007B4 /* 1louis-smith-78595.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1louis-smith-78595.jpg"; sourceTree = "<group>"; };
 		5A67B77E1F33E6A6001007B4 /* 2clique-images-315489.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2clique-images-315489.jpg"; sourceTree = "<group>"; };
-		5A67B7841F33EE82001007B4 /* melinda-pack-233281.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "melinda-pack-233281.jpg"; sourceTree = "<group>"; };
+		5A67B7841F33EE82001007B4 /* 3melinda-pack-233281.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3melinda-pack-233281.jpg"; sourceTree = "<group>"; };
+		5A67B7861F34F405001007B4 /* appIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconLarge.png; sourceTree = "<group>"; };
+		5A67B7881F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonTemporarySelfHelpDay.swift; sourceTree = "<group>"; };
 		5AA166461F2179A100588B0F /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		5AA166481F217DD200588B0F /* DateConvertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConvertToString.swift; sourceTree = "<group>"; };
 		5AB7DF9C1F26AF2B00053670 /* JournalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHistoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -83,7 +82,6 @@
 		5ABB0C6A1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4.16 Bensound- The Lounge.mp3"; sourceTree = "<group>"; };
 		5ABB0C6C1F2FFD5700FE6AD2 /* 3.48 Alexander- Birds Chirping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3.48 Alexander- Birds Chirping.mp3"; sourceTree = "<group>"; };
 		5ABB0C6E1F2FFD6100FE6AD2 /* 5.33 Alexander- Singing Bowl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5.33 Alexander- Singing Bowl.mp3"; sourceTree = "<group>"; };
-		5ABB0C721F30F43200FE6AD2 /* situp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = situp.jpg; sourceTree = "<group>"; };
 		5ABB0C771F310C9F00FE6AD2 /* Singing Bowl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Singing Bowl.jpg"; sourceTree = "<group>"; };
 		5ABB0C781F310C9F00FE6AD2 /* Better Days.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Better Days.jpg"; sourceTree = "<group>"; };
 		5ABB0C791F310C9F00FE6AD2 /* The Lounge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Lounge.jpg"; sourceTree = "<group>"; };
@@ -137,6 +135,7 @@
 				5A37FEC41F19784E00CF9054 /* AppDelegate.swift */,
 				5AA166461F2179A100588B0F /* CoreDataHelper.swift */,
 				5AA166481F217DD200588B0F /* DateConvertToString.swift */,
+				5A67B78A1F350CA2001007B4 /* Models */,
 				5AB7DFA31F295EE500053670 /* Views */,
 				5ACF19831F1D865900912B38 /* Controllers */,
 				5ACF19841F1D866E00912B38 /* Storyboards */,
@@ -145,6 +144,14 @@
 				5A37FECB1F19784E00CF9054 /* selfCare.xcdatamodeld */,
 			);
 			path = selfCare;
+			sourceTree = "<group>";
+		};
+		5A67B78A1F350CA2001007B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A67B7881F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		5AB7DFA31F295EE500053670 /* Views */ = {
@@ -176,15 +183,13 @@
 		5ABB0C761F310C6900FE6AD2 /* Music & exercise image files */ = {
 			isa = PBXGroup;
 			children = (
-				5ABB0C721F30F43200FE6AD2 /* situp.jpg */,
-				5A385A8D1F33A45900723AEF /* jakub-kriz-113718.jpg */,
-				5A385A8F1F33A45F00723AEF /* jacalyn-beales-311854.jpg */,
-				5A385A911F33AB6500723AEF /* ian-schneider-108618.jpg */,
+				5A67B7861F34F405001007B4 /* appIconLarge.png */,
+				5A385A8F1F33A45F00723AEF /* 0jacalyn-beales-311854.jpg */,
 				5A67B7761F33DF5F001007B4 /* 1louis-smith-78595.jpg */,
 				5A67B77E1F33E6A6001007B4 /* 2clique-images-315489.jpg */,
-				5A385A931F33B06E00723AEF /* 3dariusz-sankowski-56727.jpg */,
-				5A385A971F33B08600723AEF /* 3melinda-pack-233281.jpg */,
-				5A67B7841F33EE82001007B4 /* melinda-pack-233281.jpg */,
+				5A67B7841F33EE82001007B4 /* 3melinda-pack-233281.jpg */,
+				5A385A8D1F33A45900723AEF /* 4jakub-kriz-113718.jpg */,
+				5A385A911F33AB6500723AEF /* 5ian-schneider-108618.jpg */,
 				5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */,
 				5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */,
 				5ABB0C771F310C9F00FE6AD2 /* Singing Bowl.jpg */,
@@ -201,9 +206,9 @@
 			children = (
 				5ACF19871F1ED70A00912B38 /* InitialView.swift */,
 				5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */,
-				5AD4EC851F2133DE002CA10C /* MusicViewController.swift */,
 				5ABB0C761F310C6900FE6AD2 /* Music & exercise image files */,
 				5AB7DFB01F2C0AA500053670 /* Music audio files */,
+				5AD4EC851F2133DE002CA10C /* MusicViewController.swift */,
 				5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */,
 				5AD4EC811F2133C4002CA10C /* JournalViewController.swift */,
 				5AD4EC891F215331002CA10C /* CongratulationsViewController.swift */,
@@ -285,16 +290,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABB0C7D1F310C9F00FE6AD2 /* The Lounge.jpg in Resources */,
-				5A385A941F33B06E00723AEF /* 3dariusz-sankowski-56727.jpg in Resources */,
 				5ABB0C6F1F2FFD6100FE6AD2 /* 5.33 Alexander- Singing Bowl.mp3 in Resources */,
-				5ABB0C731F30F43200FE6AD2 /* situp.jpg in Resources */,
 				5ABB0C841F310D9200FE6AD2 /* Birds Chirping.jpg in Resources */,
 				5AB7DFC01F2FF55F00053670 /* 4.48 Bensound- Relaxing.mp3 in Resources */,
 				5A37FED21F19784E00CF9054 /* LaunchScreen.storyboard in Resources */,
 				5ABB0C801F310CB000FE6AD2 /* Relaxing.jpg in Resources */,
-				5A385A8E1F33A45900723AEF /* jakub-kriz-113718.jpg in Resources */,
+				5A385A8E1F33A45900723AEF /* 4jakub-kriz-113718.jpg in Resources */,
 				5A37FECF1F19784E00CF9054 /* Assets.xcassets in Resources */,
 				5AB7DFBE1F2FF54500053670 /* 10.00 Alexander- Meditation.mp3 in Resources */,
+				5A67B7871F34F405001007B4 /* appIconLarge.png in Resources */,
 				5ABB0C7E1F310C9F00FE6AD2 /* Little Planet.jpg in Resources */,
 				5ABB0C7B1F310C9F00FE6AD2 /* Singing Bowl.jpg in Resources */,
 				5ABB0C6D1F2FFD5700FE6AD2 /* 3.48 Alexander- Birds Chirping.mp3 in Resources */,
@@ -302,13 +306,12 @@
 				5ABB0C6B1F2FFD0E00FE6AD2 /* 4.16 Bensound- The Lounge.mp3 in Resources */,
 				5A37FECA1F19784E00CF9054 /* Main.storyboard in Resources */,
 				5A67B77F1F33E6A6001007B4 /* 2clique-images-315489.jpg in Resources */,
-				5A67B7851F33EE82001007B4 /* melinda-pack-233281.jpg in Resources */,
+				5A67B7851F33EE82001007B4 /* 3melinda-pack-233281.jpg in Resources */,
 				5ABB0C7C1F310C9F00FE6AD2 /* Better Days.jpg in Resources */,
 				5ABB0C671F2FF97800FE6AD2 /* 2.33 Bensound- Better Days.mp3 in Resources */,
-				5A385A901F33A45F00723AEF /* jacalyn-beales-311854.jpg in Resources */,
-				5A385A981F33B08600723AEF /* 3melinda-pack-233281.jpg in Resources */,
+				5A385A901F33A45F00723AEF /* 0jacalyn-beales-311854.jpg in Resources */,
 				5A67B7771F33DF5F001007B4 /* 1louis-smith-78595.jpg in Resources */,
-				5A385A921F33AB6500723AEF /* ian-schneider-108618.jpg in Resources */,
+				5A385A921F33AB6500723AEF /* 5ian-schneider-108618.jpg in Resources */,
 				5ABB0C691F2FFD0900FE6AD2 /* 6.36 Bensound- Little Planet.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +336,7 @@
 				5AB7DF9D1F26AF2B00053670 /* JournalHistoryTableViewCell.swift in Sources */,
 				5ACF19881F1ED70A00912B38 /* InitialView.swift in Sources */,
 				5AA166471F2179A100588B0F /* CoreDataHelper.swift in Sources */,
+				5A67B7891F350C6E001007B4 /* SingletonTemporarySelfHelpDay.swift in Sources */,
 				5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */,
 				5AD4EC901F215425002CA10C /* JournalHistoryViewController.swift in Sources */,
 				5AD4EC8A1F215331002CA10C /* CongratulationsViewController.swift in Sources */,

@@ -57,7 +57,7 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.present(alertController, animated: true, completion: nil)
         } // Show only once, first time
         
-        if tutorialHasBeenDisplayed3 == true, tutorialHasBeenDisplayed4 == false {
+        else if tutorialHasBeenDisplayed3 == true, tutorialHasBeenDisplayed4 == false {
             tutorialHasBeenDisplayed4 = true
             let alertController = UIAlertController(title: "Reminder", message: "Make sure your phone is NOT on silent mode, but ringing mode 🎶", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -82,9 +82,10 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     override func viewWillDisappear(_ animated: Bool) {
+        // gets called right before a view disappears
         super.viewWillDisappear(animated)
         if isMovingFromParentViewController{
-            // print("back button pressed")
+            print("back button pressed")
             // CoreDataHelper.delete(selfHelpDay: SelfHelpDay[selfHelpDay.count-1]) //delete the last one
             // self.selfHelpDay = CoreDataHelper.retrieveSelfHelpDay()
         }
@@ -115,8 +116,6 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if segue.identifier == "DoneForTheDay", sound != nil {
             sound.stop()
         }
-        let destination = segue.destination as! DailyEndSurveyViewController
-        destination.selfHelpDay = selfHelpDay
     }
 
     

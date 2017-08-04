@@ -58,8 +58,6 @@ class JournalViewController: UIViewController, UITextViewDelegate {
                 journal.content = journalContent.text ?? ""
                 journal.modificationTime = Date() as NSDate
                 CoreDataHelper.saveJournal()
-                let destination = segue.destination as! DailyEndSurveyViewController
-                destination.selfHelpDay = selfHelpDay
             }
         }
     }
@@ -95,6 +93,15 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         if journalContent.text.isEmpty {
             journalContent.text = "What happened today? How do you feel? Type it here."
             journalContent.textColor = sameColor
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isMovingFromParentViewController{
+            print("back button pressed")
+            // CoreDataHelper.delete(selfHelpDay: SelfHelpDay[selfHelpDay.count-1]) //delete the last one
+            // self.selfHelpDay = CoreDataHelper.retrieveSelfHelpDay()
         }
     }
     

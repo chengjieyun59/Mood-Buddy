@@ -60,10 +60,17 @@ class ExerciseViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isMovingFromParentViewController{
+            print("back button pressed")
+            // CoreDataHelper.delete(selfHelpDay: SelfHelpDay[selfHelpDay.count-1]) //delete the last one
+            // self.selfHelpDay = CoreDataHelper.retrieveSelfHelpDay()
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destination = segue.destination as! DailyEndSurveyViewController
-        destination.selfHelpDay = selfHelpDay
     }
 }
