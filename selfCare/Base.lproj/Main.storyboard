@@ -474,7 +474,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of self-care; " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omL-tn-WoP">
-                                <rect key="frame" x="150" y="122" width="134" height="28"/>
+                                <rect key="frame" x="137" y="122" width="134" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -497,13 +497,13 @@
                                 <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-l7-DJj">
-                                <rect key="frame" x="118" y="122" width="27" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-l7-DJj">
+                                <rect key="frame" x="118" y="122" width="14" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-u6-eg0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-u6-eg0">
                                 <rect key="frame" x="158" y="160" width="14" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
@@ -533,10 +533,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Congratulations! 🎉" id="buz-Un-Mgh"/>
+                    <connections>
+                        <outlet property="NumberOfDayStreaks" destination="HhL-u6-eg0" id="qgH-61-hyS"/>
+                        <outlet property="NumberOfDaysLabel" destination="Sss-l7-DJj" id="olh-zr-hZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQJ-tT-Uwz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4128.8000000000002" y="81.409295352323838"/>
+            <point key="canvasLocation" x="4128.75" y="81.338028169014081"/>
         </scene>
         <!--Daily Ending Survey ★★★-->
         <scene sceneID="Vtb-Bd-l9k">

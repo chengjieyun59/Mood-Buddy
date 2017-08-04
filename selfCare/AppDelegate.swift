@@ -15,6 +15,35 @@ var tutorialHasBeenDisplayed2 = false
 var tutorialHasBeenDisplayed3 = false
 var tutorialHasBeenDisplayed4 = false
 
+ /* Use NS User Defaults:
+ "currentStreak": Int = 4
+ "lastDateUsed": Date = 11/12/15
+ 
+var numberOfDays: Int = 0
+var numberOfDayStreaks: Int = 0
+
+var previousSelfHelpDay: Date
+var currentSelfHelpDay: Date
+
+In DailyEndSurveyViewController:
+ if "Save the day" button is pressed {
+    if currentSelfHelpDay is the same as the previousSelfHelpDay {
+        don't add 1 to numberOfDays or numberOfDayStreaks
+        don't update previousSelfHelpDay
+    }
+    else if currentSelfHelpDay is NOT the same as the previousSelfHelpDay {
+        if currentSelfHelpDay is one day after previousSelfHelpDay {
+            add 1 to numberOfDayStreaks
+        }
+        else {
+            numberOfDayStreaks = 0
+        }
+        add 1 to numberOfDays
+        previousSelfHelpDay is updated to currentSelfHelpDay
+    }
+ }
+ */
+ 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

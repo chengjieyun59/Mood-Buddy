@@ -224,10 +224,10 @@
 				5AD4EC851F2133DE002CA10C /* MusicViewController.swift */,
 				5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */,
 				5AD4EC811F2133C4002CA10C /* JournalViewController.swift */,
-				5AD4EC891F215331002CA10C /* CongratulationsViewController.swift */,
 				5AD4EC871F214B33002CA10C /* DailyEndSurveyViewController.swift */,
-				5AD4EC8D1F215400002CA10C /* PersonalHistoryViewController.swift */,
+				5AD4EC891F215331002CA10C /* CongratulationsViewController.swift */,
 				5AD4EC8F1F215425002CA10C /* JournalHistoryViewController.swift */,
+				5AD4EC8D1F215400002CA10C /* PersonalHistoryViewController.swift */,
 				5AD4EC8B1F2153EA002CA10C /* ResourcesViewController.swift */,
 			);
 			name = Controllers;

@@ -9,6 +9,8 @@
 import UIKit
 
 class CongratulationsViewController: UIViewController {
+    @IBOutlet weak var NumberOfDaysLabel: UILabel!
+    @IBOutlet weak var NumberOfDayStreaks: UILabel!
 
     // TODO: Use core data to count: (a) number of days of self care & (b) number of consecutive streak days
     
