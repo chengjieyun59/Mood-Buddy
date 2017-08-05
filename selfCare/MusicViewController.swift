@@ -47,12 +47,13 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
                             "The Lounge.jpg",
                             "Relaxing.jpg"]
         
-        if tutorialHasBeenDisplayed3 == false {
-            tutorialHasBeenDisplayed3 = true
+        let checkDisplay3 = UserDefaults.standard.bool(forKey: "alert3WasDisplayed") //default is false
+        if checkDisplay3 == false {
             let alertController = UIAlertController(title: "Warning", message: "Make sure your phone is NOT on silent mode, but ringing mode. Tap on each row to listen to music 🎶. Tap again to stop.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "alert3WasDisplayed")
         } // Show only once
     }
     

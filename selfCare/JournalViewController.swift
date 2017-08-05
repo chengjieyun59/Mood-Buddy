@@ -25,12 +25,13 @@ class JournalViewController: UIViewController, UITextViewDelegate {
         journalTitle.text = journal?.title ?? ""
         journalContent.text = journal?.content ?? "" //displayed from core data
         
-        if tutorialHasBeenDisplayed2 == false, shouldEnableUserInteraction == true {
-            tutorialHasBeenDisplayed2 = true
+        let checkDisplay2 = UserDefaults.standard.bool(forKey: "alert2WasDisplayed") //default is false
+        if checkDisplay2 == false, shouldEnableUserInteraction == true {
             let alertController = UIAlertController(title: "Dismiss keyboard", message: "Tap outside the text boxes to dismiss keyboard.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "alert2WasDisplayed")
         } // Show this once only in journal, but not shown in journal history
         
         if shouldEnableUserInteraction == true {

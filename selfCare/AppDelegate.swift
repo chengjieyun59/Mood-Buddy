@@ -9,13 +9,7 @@
 import UIKit
 import CoreData
 
-// TODO: declare global variables here: numberOfDays and numberOfDayStreak
-var tutorialHasBeenDisplayed1 = false
-var tutorialHasBeenDisplayed2 = false
-var tutorialHasBeenDisplayed3 = false
-var tutorialHasBeenDisplayed4 = false
-
- /* Use NS User Defaults:
+ /* Todo: Use NS User Defaults:
  "currentStreak": Int = 4
  "lastDateUsed": Date = 11/12/15
  

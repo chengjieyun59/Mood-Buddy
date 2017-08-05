@@ -967,10 +967,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jacalyn-beales-311854.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Atu-Zx-wik">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0jacalyn-beales-311854.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Atu-Zx-wik">
                                 <rect key="frame" x="-4" y="64" width="328" height="455"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0jacalyn-beales-311854.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-nJ-UoN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-nJ-UoN">
                                 <rect key="frame" x="16" y="84" width="288" height="415"/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.75" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -1118,7 +1118,6 @@
         <image name="PersonalHistory" width="25" height="25"/>
         <image name="Resources" width="25" height="25"/>
         <image name="SelfCare" width="25" height="25"/>
-        <image name="jacalyn-beales-311854.jpg" width="4000" height="6000"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LT2-sT-TxC"/>

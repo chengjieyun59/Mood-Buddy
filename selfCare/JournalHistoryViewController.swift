@@ -21,14 +21,6 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         self.tabBarController?.tabBar.tintColor = UIColor.white
         
-        if tutorialHasBeenDisplayed1 == false, journals.count == 1{
-            tutorialHasBeenDisplayed1 = true
-            let alertController = UIAlertController(title: "Warning", message: "You can’t edit the journal, but you can swipe left to delete each journal", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true, completion: nil)
-        }// show only once and when there's one journal entry that users can try deleting
-        
         tableView.delegate = self
         tableView.dataSource = self
         journals = CoreDataHelper.retrieveJournals()
@@ -36,6 +28,16 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewWillAppear(_ animated: Bool) {
         journals = CoreDataHelper.retrieveJournals()
+        
+        let checkDisplay1 = UserDefaults.standard.bool(forKey: "alert1WasDisplayed") //default is false
+        if checkDisplay1 == false, journals.count == 1{
+            let alertController = UIAlertController(title: "Warning", message: "You can’t edit the journal, but you can swipe left to delete each journal", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+            UserDefaults.standard.set(true, forKey: "alert1WasDisplayed")
+            
+        }// show only once and when there's one journal entry that users can try deleting
     } // this gets called every time the user switch tab
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

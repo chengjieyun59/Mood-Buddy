@@ -41,6 +41,8 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalHistoryTableViewCell", for: indexPath) as! PersonalHistoryTableViewCell
         let row = indexPath.row
         let selfHelpDay = selfHelpDays[row]
+        
+        cell.selectionStyle = UITableViewCellSelectionStyle.none //make the cell not change color when clicked
 
         cell.selfHelpDateLabel.text = selfHelpDay.selfHelpDate?.convertToString()
         cell.timeSpentLabel.text = selfHelpDay.timeSpent
