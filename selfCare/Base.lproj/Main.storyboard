@@ -325,7 +325,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpb-Jg-kXu">
-                                                    <rect key="frame" x="20" y="19" width="690" height="21"/>
+                                                    <rect key="frame" x="20" y="19" width="242" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -468,43 +468,25 @@
                                 <rect key="frame" x="-4" y="64" width="328" height="455"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations on " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0w-3o-9Sv">
-                                <rect key="frame" x="20" y="84" width="211" height="28"/>
+                                <rect key="frame" x="54.5" y="84" width="211" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215686274506" green="0.92156862745098034" blue="0.84313725490196079" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of self-care; " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omL-tn-WoP">
-                                <rect key="frame" x="137" y="122" width="134" height="28"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzg-gE-VmO">
-                                <rect key="frame" x="20" y="122" width="93" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="finishing self-care" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzg-gE-VmO">
+                                <rect key="frame" x="54.5" y="122" width="189" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215686274506" green="0.92156862745098034" blue="0.84313725490196079" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you are on a" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-uJ-3Gb">
-                                <rect key="frame" x="20" y="160" width="133" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="today! Let's make this" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-uJ-3Gb">
+                                <rect key="frame" x="54.5" y="160" width="237" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-day streak." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlQ-4m-hNF">
-                                <rect key="frame" x="172" y="160" width="128" height="28"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-l7-DJj">
-                                <rect key="frame" x="118" y="122" width="14" height="28"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-u6-eg0">
-                                <rect key="frame" x="158" y="160" width="14" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a daily habit, buddy." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgU-gy-m9e">
+                                <rect key="frame" x="55" y="198" width="216" height="28"/>
                                 <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.92156862750000001" blue="0.84313725490000002" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -512,31 +494,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="omL-tn-WoP" firstAttribute="centerY" secondItem="Sss-l7-DJj" secondAttribute="centerY" id="2qW-jc-gdu"/>
                             <constraint firstItem="39N-aC-UbS" firstAttribute="leading" secondItem="QLg-3e-P6p" secondAttribute="leadingMargin" constant="-20" id="37c-dS-FlT"/>
+                            <constraint firstItem="hgU-gy-m9e" firstAttribute="top" secondItem="Goi-uJ-3Gb" secondAttribute="bottom" constant="10" id="BnT-Uu-pxh"/>
                             <constraint firstItem="g0w-3o-9Sv" firstAttribute="top" secondItem="Xdj-y8-1xW" secondAttribute="bottom" constant="20" id="FXj-VO-HJb"/>
                             <constraint firstItem="39N-aC-UbS" firstAttribute="top" secondItem="Xdj-y8-1xW" secondAttribute="bottom" id="Gzl-Ij-TjV"/>
-                            <constraint firstItem="g0w-3o-9Sv" firstAttribute="leading" secondItem="QLg-3e-P6p" secondAttribute="leading" constant="20" id="Hv9-d1-dmF"/>
-                            <constraint firstItem="Sss-l7-DJj" firstAttribute="centerY" secondItem="lzg-gE-VmO" secondAttribute="centerY" id="Kbe-VY-obu"/>
-                            <constraint firstItem="HhL-u6-eg0" firstAttribute="centerY" secondItem="Goi-uJ-3Gb" secondAttribute="centerY" id="LJq-Zu-3dY"/>
-                            <constraint firstItem="Sss-l7-DJj" firstAttribute="leading" secondItem="lzg-gE-VmO" secondAttribute="trailing" constant="5" id="Pbq-Wq-fib"/>
+                            <constraint firstItem="g0w-3o-9Sv" firstAttribute="centerX" secondItem="39N-aC-UbS" secondAttribute="centerX" id="JbV-mf-7aO"/>
                             <constraint firstItem="lzg-gE-VmO" firstAttribute="leading" secondItem="g0w-3o-9Sv" secondAttribute="leading" id="TR1-x0-Ohc"/>
-                            <constraint firstItem="omL-tn-WoP" firstAttribute="leading" secondItem="Sss-l7-DJj" secondAttribute="trailing" constant="5" id="Ud2-Vb-5VR"/>
                             <constraint firstItem="Goi-uJ-3Gb" firstAttribute="top" secondItem="lzg-gE-VmO" secondAttribute="bottom" constant="10" id="Usd-J4-7Xv"/>
-                            <constraint firstItem="mlQ-4m-hNF" firstAttribute="leading" secondItem="HhL-u6-eg0" secondAttribute="trailing" id="aCI-ZJ-uCb"/>
+                            <constraint firstItem="hgU-gy-m9e" firstAttribute="leading" secondItem="Goi-uJ-3Gb" secondAttribute="leading" id="XLj-Ey-1pF"/>
                             <constraint firstItem="lzg-gE-VmO" firstAttribute="top" secondItem="g0w-3o-9Sv" secondAttribute="bottom" constant="10" id="byj-Qq-340"/>
                             <constraint firstAttribute="trailingMargin" secondItem="39N-aC-UbS" secondAttribute="trailing" constant="-20" id="cjm-Pn-oxa"/>
-                            <constraint firstItem="HhL-u6-eg0" firstAttribute="leading" secondItem="Goi-uJ-3Gb" secondAttribute="trailing" constant="5" id="iSi-Bi-fh4"/>
                             <constraint firstItem="A8L-sC-MXj" firstAttribute="top" secondItem="39N-aC-UbS" secondAttribute="bottom" id="m1A-gM-J8S"/>
-                            <constraint firstItem="mlQ-4m-hNF" firstAttribute="centerY" secondItem="HhL-u6-eg0" secondAttribute="centerY" id="viN-ZI-9eS"/>
                             <constraint firstItem="Goi-uJ-3Gb" firstAttribute="leading" secondItem="lzg-gE-VmO" secondAttribute="leading" id="xSH-ox-uG4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Congratulations! 🎉" id="buz-Un-Mgh"/>
-                    <connections>
-                        <outlet property="NumberOfDayStreaks" destination="HhL-u6-eg0" id="qgH-61-hyS"/>
-                        <outlet property="NumberOfDaysLabel" destination="Sss-l7-DJj" id="olh-zr-hZX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQJ-tT-Uwz" sceneMemberID="firstResponder"/>
             </objects>
@@ -713,7 +685,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2Q-3g-dny">
-                                                    <rect key="frame" x="28" y="7" width="672" height="18"/>
+                                                    <rect key="frame" x="28" y="7" width="224" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>

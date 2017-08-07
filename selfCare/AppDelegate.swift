@@ -8,35 +8,6 @@
 
 import UIKit
 import CoreData
-
- /* Todo: Use NS User Defaults:
- "currentStreak": Int = 4
- "lastDateUsed": Date = 11/12/15
- 
-var numberOfDays: Int = 0
-var numberOfDayStreaks: Int = 0
-
-var previousSelfHelpDay: Date
-var currentSelfHelpDay: Date
-
-In DailyEndSurveyViewController:
- if "Save the day" button is pressed {
-    if currentSelfHelpDay is the same as the previousSelfHelpDay {
-        don't add 1 to numberOfDays or numberOfDayStreaks
-        don't update previousSelfHelpDay
-    }
-    else if currentSelfHelpDay is NOT the same as the previousSelfHelpDay {
-        if currentSelfHelpDay is one day after previousSelfHelpDay {
-            add 1 to numberOfDayStreaks
-        }
-        else {
-            numberOfDayStreaks = 0
-        }
-        add 1 to numberOfDays
-        previousSelfHelpDay is updated to currentSelfHelpDay
-    }
- }
- */
  
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -45,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        // UINavigationBar.appearance().barStyle = .default // change status battery bar color
         UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 215/255, blue: 227/255, alpha: 1) // change RGB color to 101, 214, 227
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UINavigationBar.appearance().tintColor = .white

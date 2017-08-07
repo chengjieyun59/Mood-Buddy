@@ -13,13 +13,13 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var tableView: UITableView!
     var sound: AVAudioPlayer!
-    let musics = ["3.48 Alexander- Birds Chirping",
-                  "10.00 Alexander- Meditation",
-                  "5.33 Alexander- Singing Bowl",
-                  "2.33 Bensound- Better Days",
-                  "6.36 Bensound- Little Planet",
-                  "4.16 Bensound- The Lounge",
-                  "4.48 Bensound- Relaxing",]
+    let musics = ["10.00 Meditation- Alexander",
+                  "6.36 Little Planet- Bensound",
+                  "5.33 Singing Bowl- Alexander",
+                  "4.48 Relaxing- Bensound",
+                  "4.16 The Lounge- Bensound",
+                  "3.48 Birds Chirping- Alexander",
+                  "2.33 Better Days- Bensound",]
     var selfHelpDay: SelfHelpDay?
         var musicImages : [String]!
     var rowPlaying: Int = 8 //used to check if the same cell is tapped again to stop music
@@ -39,13 +39,13 @@ class MusicViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         
-        self.musicImages = ["Birds Chirping.jpg",
-                            "Meditation.jpg",
-                            "Singing Bowl.jpg",
-                            "Better Days.jpg",
+        self.musicImages = ["Meditation.jpg",
                             "Little Planet.jpg",
+                            "Singing Bowl.jpg",
+                            "Relaxing.jpg",
                             "The Lounge.jpg",
-                            "Relaxing.jpg"]
+                            "Birds Chirping.jpg",
+                            "Better Days.jpg",]
         
         let checkDisplay3 = UserDefaults.standard.bool(forKey: "alert3WasDisplayed") //default is false
         if checkDisplay3 == false {

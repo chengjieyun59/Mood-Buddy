@@ -15,7 +15,6 @@ extension Date {
         let myString = formatter.string(from: date)
         let yourDate: Date? = formatter.date(from: myString)
         
-        // formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         // shows in the format of: Tue 07/25/17, 10:17 AM
         formatter.dateFormat = "E MM/dd/yy', 'h:mm a"
         

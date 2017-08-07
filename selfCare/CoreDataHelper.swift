@@ -47,29 +47,6 @@ class CoreDataHelper{
         return []
     }
     
-    /*
-     ////////////////////////////////////
-     // static methods for Exercises: //
-     //////////////////////////////////
-    static func newExercise() -> Exercise {
-        let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercise", into: managedContext) as! Exercise
-        return exercise
-    }
-    
-    static func saveExercise(){
-        do {
-            try managedContext.save()
-        } catch let error as NSError{
-            print("Saving failed \(error)")
-        }
-    }
-    
-    static func delete(exercise: Exercise){
-        managedContext.delete(exercise)
-        saveExercise()
-    }
-    */
-    
     ///////////////////////////////////////
     // static methods for SelfHelpDays: //
     /////////////////////////////////////
