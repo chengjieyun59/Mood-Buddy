@@ -32,7 +32,6 @@ class DailyEndSurveyViewController: UIViewController {
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler:{alert -> Void in})
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
-                print("User inputted a non-integer")
             } // check if user actually inputted an integer number
                 
             else {

@@ -59,7 +59,6 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier{
             if identifier == "displayJournal"{
-                print("User displayed a journal")
                 let indexPath = tableView.indexPathForSelectedRow!
                 let journal = journals.reversed()[indexPath.row]
                 let journalViewController = segue.destination as! JournalViewController
