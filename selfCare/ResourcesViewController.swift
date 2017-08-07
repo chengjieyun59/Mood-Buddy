@@ -11,7 +11,7 @@ import UIKit
 class ResourcesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    let resources = ["1. National Suicide Hotline", "2. Depression Hotline", "3. Support for Sexual Assault Survivors", "4. Support for LGBTQIA", "5. 30 Day Meditation Challenge", "6. 30 Day Life-Changing Challenges", "7. Improve Relationships with Others", "8. Improve Quality of Life", "*** Credits/ Description"]
+    let resources = ["1. National Suicide Hotline", "2. Depression Hotline", "3. Sexual Assault Survivor Support", "4. LGBTQIA Support", "5. 30-Day Meditation Challenge", "6. 30-Day Life-Changing Challenges", "7. Improve Relationships with Others", "8. Improve Quality of Life", "*** Credits/ Description"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

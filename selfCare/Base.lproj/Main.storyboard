@@ -60,7 +60,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMT-Ok-k4n">
                                 <rect key="frame" x="51" y="205" width="150" height="60"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.74729773119999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.89685894700000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="AUs-0i-gwK"/>
                                     <constraint firstAttribute="width" constant="150" id="oXt-Ee-Lll"/>
@@ -76,7 +76,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRi-vF-yFS">
                                 <rect key="frame" x="51" y="275" width="150" height="60"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.74729773119999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.89685894700000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="QTM-aN-tt7"/>
                                     <constraint firstAttribute="width" constant="150" id="jgP-mP-GE6"/>
@@ -114,7 +114,7 @@
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6s-nj-oIl">
                                 <rect key="frame" x="51" y="345" width="150" height="60"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.74729773119999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.8968589469534245" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="IGt-5e-Pzl"/>
                                     <constraint firstAttribute="height" constant="60" id="epy-Cz-eYd"/>
@@ -202,7 +202,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZv-BU-rRP">
                                 <rect key="frame" x="90" y="459" width="210" height="40"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.89685894700000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BZ6-GN-8TV"/>
                                     <constraint firstAttribute="width" constant="210" id="E3h-XQ-vPx"/>
@@ -297,7 +297,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xg-wj-74p">
                                 <rect key="frame" x="90" y="459" width="210" height="40"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.89685894700000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="D8g-Gy-wXK"/>
                                     <constraint firstAttribute="width" constant="210" id="xNG-K5-8gq"/>
@@ -393,7 +393,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-1Y-ySb">
                                 <rect key="frame" x="90" y="459" width="210" height="40"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.89685894700000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6l9-tw-Tf5"/>
                                     <constraint firstAttribute="width" constant="210" id="FpQ-Qx-6to"/>
@@ -543,7 +543,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuS-3W-xme">
                                 <rect key="frame" x="90" y="459" width="210" height="40"/>
-                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.74729773116438358" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.29678127170000002" green="0.81585043670000001" blue="0.88006335499999999" alpha="0.89685894700000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="E13-gn-IsR"/>
                                     <constraint firstAttribute="height" constant="40" id="uxN-MP-jQh"/>
@@ -958,15 +958,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⇲ Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfT-0C-ltt">
-                                                    <rect key="frame" x="18" y="11" width="57" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="13" y="12" width="53.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cfT-0C-ltt" firstAttribute="centerY" secondItem="Pnp-08-zef" secondAttribute="centerY" id="B1W-9y-v2s"/>
-                                                <constraint firstItem="cfT-0C-ltt" firstAttribute="leading" secondItem="Pnp-08-zef" secondAttribute="leadingMargin" constant="10" id="hXZ-QE-XU7"/>
+                                                <constraint firstItem="cfT-0C-ltt" firstAttribute="leading" secondItem="Pnp-08-zef" secondAttribute="leadingMargin" constant="5" id="hXZ-QE-XU7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -1092,7 +1092,7 @@
         <image name="SelfCare" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LT2-sT-TxC"/>
         <segue reference="6wK-xf-pog"/>
+        <segue reference="fYl-sw-Ffe"/>
     </inferredMetricsTieBreakers>
 </document>
