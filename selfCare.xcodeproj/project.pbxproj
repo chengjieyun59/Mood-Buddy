@@ -41,6 +41,8 @@
 		5ABB0C831F310D9200FE6AD2 /* Meditation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */; };
 		5ABB0C841F310D9200FE6AD2 /* Birds Chirping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */; };
 		5ABB0C861F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */; };
+		5ABB5AE61F38EF3E00FE6DE8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABB5AE41F38EF3E00FE6DE8 /* Fabric.framework */; };
+		5ABB5AE71F38EF3E00FE6DE8 /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABB5AE51F38EF3E00FE6DE8 /* Answers.framework */; };
 		5ACF19861F1ED6BF00912B38 /* DailyStartSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */; };
 		5AD4EC821F2133C4002CA10C /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC811F2133C4002CA10C /* JournalViewController.swift */; };
 		5AD4EC841F2133D2002CA10C /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */; };
@@ -89,6 +91,8 @@
 		5ABB0C811F310D9200FE6AD2 /* Meditation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Meditation.jpg; sourceTree = "<group>"; };
 		5ABB0C821F310D9200FE6AD2 /* Birds Chirping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Birds Chirping.jpg"; sourceTree = "<group>"; };
 		5ABB0C851F3273BF00FE6AD2 /* PersonalHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		5ABB5AE41F38EF3E00FE6DE8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		5ABB5AE51F38EF3E00FE6DE8 /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = SOURCE_ROOT; };
 		5ACF19851F1ED6BF00912B38 /* DailyStartSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStartSurveyViewController.swift; sourceTree = "<group>"; };
 		5AD4EC811F2133C4002CA10C /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		5AD4EC831F2133D2002CA10C /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ABB5AE71F38EF3E00FE6DE8 /* Answers.framework in Frameworks */,
+				5ABB5AE61F38EF3E00FE6DE8 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +136,8 @@
 		5A37FEC31F19784E00CF9054 /* selfCare */ = {
 			isa = PBXGroup;
 			children = (
+				5ABB5AE41F38EF3E00FE6DE8 /* Fabric.framework */,
+				5ABB5AE51F38EF3E00FE6DE8 /* Answers.framework */,
 				5A37FEC41F19784E00CF9054 /* AppDelegate.swift */,
 				5AA166461F2179A100588B0F /* CoreDataHelper.swift */,
 				5AA166481F217DD200588B0F /* DateConvertToString.swift */,
@@ -252,6 +260,7 @@
 				5A37FEBD1F19784E00CF9054 /* Sources */,
 				5A37FEBE1F19784E00CF9054 /* Frameworks */,
 				5A37FEBF1F19784E00CF9054 /* Resources */,
+				5ABB5AE31F38EE9A00FE6DE8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -330,6 +339,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ABB5AE31F38EE9A00FE6DE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 24cf947c2b5c22f4498fb06046e6cb5505f62f56 8aefe647db08216aa60c203f2bcf8d5fce92b901488290999b1b991196a50a53";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A37FEBD1F19784E00CF9054 /* Sources */ = {
@@ -480,6 +505,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2MN28D6X8A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = selfCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = makeschool.selfCare;
@@ -493,6 +522,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2MN28D6X8A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = selfCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = makeschool.selfCare;

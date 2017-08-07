@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Fabric
+import Answers
  
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Fabric.with([Answers.self])
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 101/255, green: 215/255, blue: 227/255, alpha: 1) // change RGB color to 101, 214, 227
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
