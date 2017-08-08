@@ -16,6 +16,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
             tableView.reloadData()
         }
     }
+    // var screenshotJournals = ["Jul 30, 8PM", "Aug 3, 10PM", "Aug 5, 8PM"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +53,7 @@ class JournalHistoryViewController: UIViewController, UITableViewDelegate, UITab
         cell.JournalTitleLabel.text = journal.title
         cell.JournalContentLabel.text = journal.content
         cell.JournalModificationTimeLabel.text = journal.modificationTime?.convertToString()
+        // cell.JournalModificationTimeLabel.text = screenshotJournals[indexPath.row]
         
         return cell
     }

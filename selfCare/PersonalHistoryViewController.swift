@@ -16,6 +16,7 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
             tableView.reloadData()
         }
     }
+    // var screenshotDate = ["Jul 28, 7PM", "Jul 30, 8PM", "Aug 1, 5PM", "Aug 3, 10PM", "Aug 4, 7PM", "Aug 5, 8PM", "Aug 6, 7PM", "Aug 7, 7PM"]
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -44,6 +45,7 @@ class PersonalHistoryViewController: UIViewController, UITableViewDelegate, UITa
         
         cell.selectionStyle = UITableViewCellSelectionStyle.none //make the cell not change color when clicked
 
+        // cell.selfHelpDateLabel.text = screenshotDate[indexPath.row]
         cell.selfHelpDateLabel.text = selfHelpDay.selfHelpDate?.convertToString()
         cell.timeSpentLabel.text = selfHelpDay.timeSpent
         cell.selfCareMethodLabel.text = selfHelpDay.methodUsed
